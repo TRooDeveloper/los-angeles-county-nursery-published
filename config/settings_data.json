@@ -1,1 +1,404 @@
-{"current":{"defaultLogo":"shopify:\/\/shop_images\/LACN_reversed.png","transparentLogo":"{{ shop.brand.logo }}","favicon":"shopify:\/\/shop_images\/LACN-Reversed-Logo-Tree_d5c4ed04-d6ea-4fb7-b10e-0b94cf0f9cb2.png","storeLocation":"10943 De Soto Avenue, Chatsworth, CA 91311","storeEmail":"info@paradisenursery.com","storePhone":"(818) 701-5656","sFacebook":"#","sInstagram":"#","sTwitter":"#","sTikTok":"","baseMaxWidth":"1280","baseBorderRadius":20,"baseBorderRadiusSmall":10,"baseBackground":"#FFFFFF","baseText":"#232323","baseTitle":"#106b61","baseSecondaryBackground":"#f2efde","baseLink":"#106b61","primaryAccentBackground":"#a7b261","secondaryAccentBackground":"#8b632f","primaryFont":"montserrat_n4","secondaryFont":"montserrat_n4","smallFontSize":16,"baseFontSize":18,"mediumFontSize":36,"headingFontSize":28,"subHeadingFontSize":16,"buttonFontSize":"smallFontSize","primaryButtonColorCombo":"customCombo","primaryButtonCustomFill":"#a7b261","primaryButtonCustomContent":"#232323","primaryButtonHover":"darken","primaryButtonCustomBorder":true,"primaryButtonBorderRadius":40,"primaryButtonBorderWidth":1,"secondaryButtonColorCombo":"customCombo","secondaryButtonCustomFill":"rgba(0,0,0,0)","secondaryButtonCustomContent":"#ffffff","secondaryButtonHover":"darken","secondaryButtonCustomHoverFill":"#a7b261","secondaryButtonCustomBorder":true,"secondaryButtonBorderRadius":40,"secondaryButtonBorderWidth":1,"inputCustomBorder":true,"inputBorderRadius":40,"headerType":"default","cardDesktop":"3","baseCardPadding":20,"cardImageFit":"cover","cardImageRatio":"100","cardImageRatioWidth":"2","cardImageRatioHeight":"4","cardStyle":"noButton","tagOffset":10,"collectionCardTextAlign":"center","cartStyle":"none","dynamicCheckout":false,"cartAction":"cart","BPDynTitle":"LA Count Nursery","cartTimer":false,"countdown":true,"countdownCard":false,"recentlyBought":true,"reviewApp":"booster","messenger":true,"gdpr":false,"floatingContact":true,"backTopBtn":false,"sections":{"top-info-bar":{"type":"top-info-bar","blocks":{"3e6b1489-04ac-45d6-9987-92b3759a1430":{"type":"contact","settings":{"enabled":true,"enabledMobile":true,"align":"end","showPhone":true,"showEmail":true}}},"block_order":["3e6b1489-04ac-45d6-9987-92b3759a1430"],"settings":{"enabled":true,"enabledMobile":true,"layout":"default","height":25,"fontSize":"font__size--small","colorCombo":"customCombo","customFillColor":"{{ shop.brand.colors.primary[0].background }}","customContentColor":"#ffffff"}},"info-badges":{"type":"info-badges","blocks":{"fd5af8ef-fb9f-490a-b4da-4144a48a519d":{"type":"infoBadge","settings":{"icon":"shopping-bag","heading":"This is awesome!","subheading":"This is even more info about how awesome this is!"}},"8f34a1fd-57f1-476d-b533-de18777ba59d":{"type":"infoBadge","settings":{"icon":"shopping-cart","heading":"This is awesome!","subheading":"This is even more info about how awesome this is!"}},"8f34a1fd-b533-de18777ba59d":{"type":"infoBadge","settings":{"icon":"shopping-cart","heading":"This is awesome!","subheading":"There is no way it can get any more awesome?!"}}},"block_order":["fd5af8ef-fb9f-490a-b4da-4144a48a519d","8f34a1fd-57f1-476d-b533-de18777ba59d","8f34a1fd-b533-de18777ba59d"],"settings":{"enabled":false,"displayFor":"display--both","layout":"default","nomargin":true,"scopedCSS":"","height":0,"padding":0,"lineMargin":12,"backgroundColor":"rgba(0,0,0,0)","backgroundPosition":"middle","backgroundFilter":"none","backdropIntensity":50,"parallax":false,"backgroundPattern":false,"overlayOpacity":0,"overlayColor":"#000000","contentColor":"rgba(0,0,0,0)","horizontalAlignment":"end","verticalAlignment":"middle","iconPosition":"icon--left"}},"footer":{"type":"footer","blocks":{"26cad84a-2eda-4e0e-afe3-43967582effd":{"type":"footerImage","settings":{"width":"1-5","horizontalAlignment":"start","verticalAlignment":"top","image":"shopify:\/\/shop_images\/LA-County-Nursery-logo.png","imageWidth":70,"url":"","imageAlt":"logo"}},"0e188e08-01bf-4244-8aa3-997ce12eca05":{"type":"footerText","settings":{"width":"1-5","horizontalAlignment":"start","verticalAlignment":"middle","heading":"Los Angele County Nursery","text":"<p>Los Angeles County Nursery is a registered trademark owned exclusively by Majid Nursery Inc. in the United States and other jurisdictions.<\/p>"}},"79c988f6-1297-4df0-9e07-f6f74537046f":{"type":"footerLinks","disabled":true,"settings":{"width":"1-5","horizontalAlignment":"start","verticalAlignment":"middle","heading":"Categories","links":"footer"}},"b747a565-96e4-4014-bc96-cef92f052ce3":{"type":"footerLinks","settings":{"width":"auto","horizontalAlignment":"start","verticalAlignment":"top","heading":"Links","links":"footer"}},"06e04fbf-1646-47c1-849b-5f2b943d143a":{"type":"footerSocial","settings":{"width":"auto","horizontalAlignment":"start","verticalAlignment":"top","heading":"Follow Us"}},"85595977-364c-45a5-9ace-51092ab8ab1b":{"type":"footerPayment","settings":{"width":"auto","horizontalAlignment":"start","verticalAlignment":"top","heading":"Payment Method","customIcons":true,"icons":"master, paypal, shopify_pay, visa, afterpay, american_express, apple_pay,"}},"a84d7fdc-e400-46a6-aa34-68d829fccd84":{"type":"footerText","settings":{"width":"auto","horizontalAlignment":"center","verticalAlignment":"middle","heading":"","text":"<p>© 2023 Los Angeles County Nursery<\/p>"}}},"block_order":["26cad84a-2eda-4e0e-afe3-43967582effd","0e188e08-01bf-4244-8aa3-997ce12eca05","79c988f6-1297-4df0-9e07-f6f74537046f","b747a565-96e4-4014-bc96-cef92f052ce3","06e04fbf-1646-47c1-849b-5f2b943d143a","85595977-364c-45a5-9ace-51092ab8ab1b","a84d7fdc-e400-46a6-aa34-68d829fccd84"],"settings":{"layout":"default","fillColor":"#106b61","contentColor":"#ffffff","spacing":16}},"subfooter":{"type":"subfooter","blocks":{"text-01":{"type":"footerText","settings":{"width":"auto","horizontalAlignment":"center","verticalAlignment":"middle","heading":"","text":"<p>Designed and developed by <a href=\"https:\/\/boostertheme.com\/\" target=\"_blank\" title=\"Designpax Agency\">Designpax<\/a><\/p>"}}},"block_order":["text-01"],"settings":{"layout":"default","fillColor":"#232323","contentColor":"#ffffff","spacing":0}},"header--default":{"type":"header--default","settings":{"layout":"default","minHeight":100,"borderRadius":0,"shadow":true,"menuLinks":"main-menu","megamenu":true,"logoWidth":180,"logoHeight":0,"sticky":true,"contentMargin":0,"desktopCart":true,"headerBg":"{{ shop.brand.colors.primary[0].background }}","linkColor":"#ffffff","accentColor":"#a7b261","hoverStyle":"underline","tagBgColor":"#000000","tagTextColor":"#ffffff","transparent":false,"linkColorT":"#ffffff","accentColorT":"#efefef","fontSize":"small","customFont":false,"fontFamily":"roboto_n4","cartIcon":"shopping-basket","mobileLogoPosition":"center","mobileCart":true}},"bottom-info-bar":{"type":"bottom-info-bar","settings":{"enabled":false,"enabledMobile":false,"layout":"default","height":30,"fontSize":"font__size--small","colorCombo":"secondaryCombo","customFillColor":"#a7b261","customContentColor":"#ffffff"}},"api__upsell":{"type":"api__upsell","settings":{"defaultCollection":"citrus-trees"}},"header--logo-top":{"type":"header--logo-top","settings":{"layout":"default","minHeight":0,"borderRadius":0,"shadow":true,"menuLinks":"main-menu","megamenu":true,"linkPosition":"start","logoWidth":130,"logoHeight":0,"desktopLogoPosition":"left","sticky":true,"contentMargin":0,"desktopCart":true,"headerBg":"#f4f4f4","linkColor":"#353535","accentColor":"#fc6e6e","hoverStyle":"fill","tagBgColor":"#353535","tagTextColor":"#ffffff","transparent":false,"linkColorT":"#ffffff","accentColorT":"#efefef","fontSize":"base","customFont":false,"fontFamily":"work_sans_n6","cartIcon":"shopping-cart","mobileLogoPosition":"left","mobileCart":true}},"header--inline-search":{"type":"header--inline-search","settings":{"layout":"default","minHeight":0,"borderRadius":0,"shadow":true,"menuLinks":"","megamenu":true,"linkPosition":"center","logoWidth":160,"logoHeight":0,"desktopLogoPosition":"left","sticky":true,"contentMargin":0,"desktopCart":true,"headerBg":"rgba(0,0,0,0)","linkColor":"#000000","accentColor":"#000000","hoverStyle":"fill","tagBgColor":"#000","tagTextColor":"#FFF","transparent":false,"linkColorT":"#FFF","accentColorT":"#EFEFEF","searchBg":"rgba(0,0,0,0)","searchText":"rgba(0,0,0,0)","fontSize":"base","customFont":false,"fontFamily":"work_sans_n6","cartIcon":"shopping-cart","mobileLogoPosition":"left","mobileCart":true}}},"content_for_index":[],"blocks":{"14479319785270113485":{"type":"shopify:\/\/apps\/zapiet-pickup-delivery\/blocks\/app-embed\/5599aff0-8af1-473a-a372-ecd72a32b4d5","disabled":false,"settings":{}}}}}
+{
+  "current": {
+    "defaultLogo": "shopify:\/\/shop_images\/LACN_reversed.png",
+    "transparentLogo": "{{ shop.brand.logo }}",
+    "favicon": "shopify:\/\/shop_images\/LACN-Reversed-Logo-Tree_d5c4ed04-d6ea-4fb7-b10e-0b94cf0f9cb2.png",
+    "storeLocation": "10943 De Soto Avenue, Chatsworth, CA 91311",
+    "storeEmail": "info@paradisenursery.com",
+    "storePhone": "(818) 701-5656",
+    "sFacebook": "#",
+    "sInstagram": "#",
+    "sTwitter": "#",
+    "sTikTok": "",
+    "baseMaxWidth": "1280",
+    "baseBorderRadius": 20,
+    "baseBorderRadiusSmall": 10,
+    "baseBackground": "#FFFFFF",
+    "baseText": "#232323",
+    "baseTitle": "#106b61",
+    "baseSecondaryBackground": "#f2efde",
+    "baseLink": "#106b61",
+    "primaryAccentBackground": "#a7b261",
+    "secondaryAccentBackground": "#8b632f",
+    "primaryFont": "montserrat_n4",
+    "secondaryFont": "montserrat_n4",
+    "smallFontSize": 16,
+    "baseFontSize": 18,
+    "mediumFontSize": 36,
+    "headingFontSize": 28,
+    "subHeadingFontSize": 16,
+    "buttonFontSize": "smallFontSize",
+    "primaryButtonColorCombo": "customCombo",
+    "primaryButtonCustomFill": "#a7b261",
+    "primaryButtonCustomContent": "#232323",
+    "primaryButtonHover": "darken",
+    "primaryButtonCustomBorder": true,
+    "primaryButtonBorderRadius": 40,
+    "primaryButtonBorderWidth": 1,
+    "secondaryButtonColorCombo": "customCombo",
+    "secondaryButtonCustomFill": "rgba(0,0,0,0)",
+    "secondaryButtonCustomContent": "#ffffff",
+    "secondaryButtonHover": "darken",
+    "secondaryButtonCustomHoverFill": "#a7b261",
+    "secondaryButtonCustomBorder": true,
+    "secondaryButtonBorderRadius": 40,
+    "secondaryButtonBorderWidth": 1,
+    "inputCustomBorder": true,
+    "inputBorderRadius": 40,
+    "headerType": "default",
+    "cardDesktop": "3",
+    "baseCardPadding": 20,
+    "cardImageFit": "cover",
+    "cardImageRatio": "100",
+    "cardImageRatioWidth": "2",
+    "cardImageRatioHeight": "4",
+    "cardStyle": "noButton",
+    "tagOffset": 10,
+    "collectionCardTextAlign": "center",
+    "cartStyle": "none",
+    "dynamicCheckout": false,
+    "cartAction": "cart",
+    "BPDynTitle": "LA Count Nursery",
+    "cartTimer": false,
+    "countdown": true,
+    "countdownCard": false,
+    "recentlyBought": true,
+    "reviewApp": "booster",
+    "messenger": true,
+    "gdpr": false,
+    "floatingContact": true,
+    "backTopBtn": false,
+    "sections": {
+      "top-info-bar": {
+        "type": "top-info-bar",
+        "blocks": {
+          "3e6b1489-04ac-45d6-9987-92b3759a1430": {
+            "type": "contact",
+            "settings": {
+              "enabled": true,
+              "enabledMobile": true,
+              "align": "end",
+              "showPhone": true,
+              "showEmail": true
+            }
+          }
+        },
+        "block_order": [
+          "3e6b1489-04ac-45d6-9987-92b3759a1430"
+        ],
+        "settings": {
+          "enabled": true,
+          "enabledMobile": true,
+          "layout": "default",
+          "height": 25,
+          "fontSize": "font__size--small",
+          "colorCombo": "customCombo",
+          "customFillColor": "{{ shop.brand.colors.primary[0].background }}",
+          "customContentColor": "#ffffff"
+        }
+      },
+      "info-badges": {
+        "type": "info-badges",
+        "blocks": {
+          "fd5af8ef-fb9f-490a-b4da-4144a48a519d": {
+            "type": "infoBadge",
+            "settings": {
+              "icon": "truck",
+              "heading": "Local Delivery",
+              "subheading": "This is even more info about how awesome this is!"
+            }
+          },
+          "8f34a1fd-57f1-476d-b533-de18777ba59d": {
+            "type": "infoBadge",
+            "settings": {
+              "icon": "shopping-cart",
+              "heading": "This is awesome!",
+              "subheading": "This is even more info about how awesome this is!"
+            }
+          },
+          "8f34a1fd-b533-de18777ba59d": {
+            "type": "infoBadge",
+            "settings": {
+              "icon": "shopping-cart",
+              "heading": "This is awesome!",
+              "subheading": "There is no way it can get any more awesome?!"
+            }
+          }
+        },
+        "block_order": [
+          "fd5af8ef-fb9f-490a-b4da-4144a48a519d",
+          "8f34a1fd-57f1-476d-b533-de18777ba59d",
+          "8f34a1fd-b533-de18777ba59d"
+        ],
+        "settings": {
+          "enabled": true,
+          "displayFor": "display--both",
+          "layout": "default",
+          "nomargin": true,
+          "scopedCSS": "",
+          "height": 0,
+          "padding": 0,
+          "lineMargin": 12,
+          "backgroundColor": "rgba(0,0,0,0)",
+          "backgroundPosition": "middle",
+          "backgroundFilter": "none",
+          "backdropIntensity": 50,
+          "parallax": false,
+          "backgroundPattern": false,
+          "overlayOpacity": 0,
+          "overlayColor": "#000000",
+          "contentColor": "rgba(0,0,0,0)",
+          "horizontalAlignment": "end",
+          "verticalAlignment": "middle",
+          "iconPosition": "icon--left"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "26cad84a-2eda-4e0e-afe3-43967582effd": {
+            "type": "footerImage",
+            "settings": {
+              "width": "1-5",
+              "horizontalAlignment": "start",
+              "verticalAlignment": "top",
+              "image": "shopify:\/\/shop_images\/LA-County-Nursery-logo.png",
+              "imageWidth": 70,
+              "url": "",
+              "imageAlt": "logo"
+            }
+          },
+          "0e188e08-01bf-4244-8aa3-997ce12eca05": {
+            "type": "footerText",
+            "settings": {
+              "width": "1-5",
+              "horizontalAlignment": "start",
+              "verticalAlignment": "middle",
+              "heading": "Los Angele County Nursery",
+              "text": "<p>Los Angeles County Nursery is a registered trademark owned exclusively by Majid Nursery Inc. in the United States and other jurisdictions.<\/p>"
+            }
+          },
+          "79c988f6-1297-4df0-9e07-f6f74537046f": {
+            "type": "footerLinks",
+            "disabled": true,
+            "settings": {
+              "width": "1-5",
+              "horizontalAlignment": "start",
+              "verticalAlignment": "middle",
+              "heading": "Categories",
+              "links": "footer"
+            }
+          },
+          "b747a565-96e4-4014-bc96-cef92f052ce3": {
+            "type": "footerLinks",
+            "settings": {
+              "width": "auto",
+              "horizontalAlignment": "start",
+              "verticalAlignment": "top",
+              "heading": "Links",
+              "links": "footer"
+            }
+          },
+          "06e04fbf-1646-47c1-849b-5f2b943d143a": {
+            "type": "footerSocial",
+            "settings": {
+              "width": "auto",
+              "horizontalAlignment": "start",
+              "verticalAlignment": "top",
+              "heading": "Follow Us"
+            }
+          },
+          "85595977-364c-45a5-9ace-51092ab8ab1b": {
+            "type": "footerPayment",
+            "settings": {
+              "width": "auto",
+              "horizontalAlignment": "start",
+              "verticalAlignment": "top",
+              "heading": "Payment Method",
+              "customIcons": true,
+              "icons": "master, paypal, shopify_pay, visa, afterpay, american_express, apple_pay,"
+            }
+          },
+          "a84d7fdc-e400-46a6-aa34-68d829fccd84": {
+            "type": "footerText",
+            "settings": {
+              "width": "auto",
+              "horizontalAlignment": "center",
+              "verticalAlignment": "middle",
+              "heading": "",
+              "text": "<p>© 2023 Los Angeles County Nursery<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "26cad84a-2eda-4e0e-afe3-43967582effd",
+          "0e188e08-01bf-4244-8aa3-997ce12eca05",
+          "79c988f6-1297-4df0-9e07-f6f74537046f",
+          "b747a565-96e4-4014-bc96-cef92f052ce3",
+          "06e04fbf-1646-47c1-849b-5f2b943d143a",
+          "85595977-364c-45a5-9ace-51092ab8ab1b",
+          "a84d7fdc-e400-46a6-aa34-68d829fccd84"
+        ],
+        "settings": {
+          "layout": "default",
+          "fillColor": "#106b61",
+          "contentColor": "#ffffff",
+          "spacing": 16
+        }
+      },
+      "subfooter": {
+        "type": "subfooter",
+        "blocks": {
+          "text-01": {
+            "type": "footerText",
+            "settings": {
+              "width": "auto",
+              "horizontalAlignment": "center",
+              "verticalAlignment": "middle",
+              "heading": "",
+              "text": "<p>Designed and developed by <a href=\"https:\/\/boostertheme.com\/\" target=\"_blank\" title=\"Designpax Agency\">Designpax<\/a><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "text-01"
+        ],
+        "settings": {
+          "layout": "default",
+          "fillColor": "#232323",
+          "contentColor": "#ffffff",
+          "spacing": 0
+        }
+      },
+      "header--default": {
+        "type": "header--default",
+        "settings": {
+          "layout": "default",
+          "minHeight": 100,
+          "borderRadius": 0,
+          "shadow": true,
+          "menuLinks": "main-menu",
+          "megamenu": true,
+          "logoWidth": 180,
+          "logoHeight": 0,
+          "sticky": true,
+          "contentMargin": 0,
+          "desktopCart": true,
+          "headerBg": "{{ shop.brand.colors.primary[0].background }}",
+          "linkColor": "#ffffff",
+          "accentColor": "#a7b261",
+          "hoverStyle": "underline",
+          "tagBgColor": "#000000",
+          "tagTextColor": "#ffffff",
+          "transparent": false,
+          "linkColorT": "#ffffff",
+          "accentColorT": "#efefef",
+          "fontSize": "small",
+          "customFont": false,
+          "fontFamily": "roboto_n4",
+          "cartIcon": "shopping-basket",
+          "mobileLogoPosition": "center",
+          "mobileCart": true
+        }
+      },
+      "bottom-info-bar": {
+        "type": "bottom-info-bar",
+        "settings": {
+          "enabled": false,
+          "enabledMobile": false,
+          "layout": "default",
+          "height": 30,
+          "fontSize": "font__size--small",
+          "colorCombo": "secondaryCombo",
+          "customFillColor": "#a7b261",
+          "customContentColor": "#ffffff"
+        }
+      },
+      "api__upsell": {
+        "type": "api__upsell",
+        "settings": {
+          "defaultCollection": "citrus-trees"
+        }
+      },
+      "header--logo-top": {
+        "type": "header--logo-top",
+        "settings": {
+          "layout": "default",
+          "minHeight": 0,
+          "borderRadius": 0,
+          "shadow": true,
+          "menuLinks": "main-menu",
+          "megamenu": true,
+          "linkPosition": "start",
+          "logoWidth": 130,
+          "logoHeight": 0,
+          "desktopLogoPosition": "left",
+          "sticky": true,
+          "contentMargin": 0,
+          "desktopCart": true,
+          "headerBg": "#f4f4f4",
+          "linkColor": "#353535",
+          "accentColor": "#fc6e6e",
+          "hoverStyle": "fill",
+          "tagBgColor": "#353535",
+          "tagTextColor": "#ffffff",
+          "transparent": false,
+          "linkColorT": "#ffffff",
+          "accentColorT": "#efefef",
+          "fontSize": "base",
+          "customFont": false,
+          "fontFamily": "work_sans_n6",
+          "cartIcon": "shopping-cart",
+          "mobileLogoPosition": "left",
+          "mobileCart": true
+        }
+      },
+      "header--inline-search": {
+        "type": "header--inline-search",
+        "settings": {
+          "layout": "default",
+          "minHeight": 0,
+          "borderRadius": 0,
+          "shadow": true,
+          "menuLinks": "",
+          "megamenu": true,
+          "linkPosition": "center",
+          "logoWidth": 160,
+          "logoHeight": 0,
+          "desktopLogoPosition": "left",
+          "sticky": true,
+          "contentMargin": 0,
+          "desktopCart": true,
+          "headerBg": "rgba(0,0,0,0)",
+          "linkColor": "#000000",
+          "accentColor": "#000000",
+          "hoverStyle": "fill",
+          "tagBgColor": "#000",
+          "tagTextColor": "#FFF",
+          "transparent": false,
+          "linkColorT": "#FFF",
+          "accentColorT": "#EFEFEF",
+          "searchBg": "rgba(0,0,0,0)",
+          "searchText": "rgba(0,0,0,0)",
+          "fontSize": "base",
+          "customFont": false,
+          "fontFamily": "work_sans_n6",
+          "cartIcon": "shopping-cart",
+          "mobileLogoPosition": "left",
+          "mobileCart": true
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "14479319785270113485": {
+        "type": "shopify:\/\/apps\/zapiet-pickup-delivery\/blocks\/app-embed\/5599aff0-8af1-473a-a372-ecd72a32b4d5",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  }
+}
