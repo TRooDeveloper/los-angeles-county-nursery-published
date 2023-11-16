@@ -351,68 +351,6 @@
         "showMoreAlignment": "center"
       }
     },
-    "d01d3f0d-189a-4cff-9e94-9db79464ec77": {
-      "type": "section__featured-collection-tabs",
-      "blocks": {
-        "7e6fdbb0-b1f2-406e-b465-247c655ea451": {
-          "type": "fplistCollection",
-          "settings": {
-            "collection": "fruit-trees",
-            "title": ""
-          }
-        },
-        "6ac5c998-b527-4bbf-815e-a60217f69506": {
-          "type": "fplistCollection",
-          "settings": {
-            "collection": "citrus-trees",
-            "title": ""
-          }
-        },
-        "4e16c944-80ac-4db7-b511-2b0a5edef96f": {
-          "type": "fplistCollection",
-          "settings": {
-            "collection": "avocado-trees-1",
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "7e6fdbb0-b1f2-406e-b465-247c655ea451",
-        "6ac5c998-b527-4bbf-815e-a60217f69506",
-        "4e16c944-80ac-4db7-b511-2b0a5edef96f"
-      ],
-      "disabled": true,
-      "settings": {
-        "custom_id": "",
-        "displayFor": "display--both",
-        "layout": "default",
-        "nomargin": false,
-        "scopedCSS": "",
-        "height": 0,
-        "padding": 15,
-        "backgroundColor": "rgba(0,0,0,0)",
-        "backgroundPosition": "middle",
-        "backgroundFilter": "none",
-        "backdropIntensity": 50,
-        "parallax": true,
-        "backgroundPattern": false,
-        "overlayOpacity": 0,
-        "overlayColor": "#000000",
-        "contentColor": "rgba(0,0,0,0)",
-        "horizontalAlignment": "center",
-        "verticalAlignment": "middle",
-        "heading": "FEATURED PLANTS AND FRUIT TREES",
-        "headingColor": "rgba(0,0,0,0)",
-        "subheading": "",
-        "subheadingColor": "rgba(0,0,0,0)",
-        "subheadingPosition": "above",
-        "headingAlignment": "center",
-        "prdtCount": 15,
-        "showMore": true,
-        "showMoreText": "",
-        "showMoreAlignment": "center"
-      }
-    },
     "13b3e5ed-24de-4bae-a78d-934c3aa30089": {
       "type": "section__content-text",
       "blocks": {
@@ -507,66 +445,6 @@
         "showMoreAlignment": "center"
       }
     },
-    "99c42516-d134-4b78-a4ae-995a2ba1f170": {
-      "type": "section__cta",
-      "blocks": {
-        "template--15265774764143__99c42516-d134-4b78-a4ae-995a2ba1f170-title-1": {
-          "type": "title",
-          "settings": {
-            "fullWidth": true,
-            "content": "The Fruit Tree, Citrus, and Avocado Specialists",
-            "textColor": "#0a3d2c",
-            "fontFamily": "title",
-            "fontSize": "medium"
-          }
-        },
-        "template--15265774764143__99c42516-d134-4b78-a4ae-995a2ba1f170-richText-1": {
-          "type": "richText",
-          "settings": {
-            "fullWidth": true,
-            "maxBWidth": 100,
-            "content": "<p>For over 20 years now, our dedicated family has grown and planted Southern California’s most popular and rare fruit trees, flowering, fragrant, privacy, Persian and Mediterranean plants. Our experienced staff is available to consult, design, install, and manage your landscape and home orchard.<\/p><p>Founder, Dr. Majid Jahanbin’s fell in love with plants at the age of 7, while visiting his dads farm in Abadan, Iran. He earned his Phd in Plant Science and Agricultural Engineering, from Bologna University in Italy. He now has over 50 years of professional experience, and hosts two popular radio shows, where he provides gardening advice and answers questions on Air in Farsi.<\/p><p>Ashkan Jahanbin is a horticulturalist and landscape consultant, with degrees in Environmental Horticulture and Landscape Architecture from California Polytechnic University in San Luis Obispo, Ca. He grew up around the nursery, learning about plants and their role in our lives. As the former nursery production manager at Cal Poly, he focused on growing organically. He’s now dedicated to Paradise Nursery. Growing plants and developing landscapes that are beautiful, enjoyable, and environmentally sustainable. From our family to yours, Happy Harvests!<\/p>",
-            "detectLists": true,
-            "textColor": "rgba(0,0,0,0)",
-            "fontFamily": "base",
-            "fontSize": "small"
-          }
-        }
-      },
-      "block_order": [
-        "template--15265774764143__99c42516-d134-4b78-a4ae-995a2ba1f170-title-1",
-        "template--15265774764143__99c42516-d134-4b78-a4ae-995a2ba1f170-richText-1"
-      ],
-      "settings": {
-        "custom_id": "",
-        "displayFor": "display--both",
-        "layout": "default",
-        "nomargin": false,
-        "scopedCSS": "",
-        "height": 290,
-        "padding": 25,
-        "lineMargin": 12,
-        "backgroundColor": "rgba(0,0,0,0)",
-        "backgroundImageUrl": "",
-        "backgroundPosition": "middle",
-        "backgroundFilter": "none",
-        "backdropIntensity": 50,
-        "parallax": false,
-        "backgroundPattern": false,
-        "overlayOpacity": 0,
-        "overlayColor": "#000000",
-        "contentColor": "rgba(0,0,0,0)",
-        "horizontalAlignment": "center",
-        "verticalAlignment": "middle",
-        "maxContentWidth": 100,
-        "heading": "",
-        "headingColor": "rgba(0,0,0,0)",
-        "subheading": "",
-        "subheadingColor": "rgba(0,0,0,0)",
-        "subheadingPosition": "above",
-        "headingAlignment": "center"
-      }
-    },
     "1664514253bdfb3651": {
       "type": "section__cta",
       "blocks": {
@@ -645,11 +523,9 @@
   "order": [
     "1664492475c4d59cbd",
     "ef8f0445-ff2d-4d2d-b899-e6ed593cb732",
-    "d01d3f0d-189a-4cff-9e94-9db79464ec77",
     "13b3e5ed-24de-4bae-a78d-934c3aa30089",
     "64ddf9c4-6431-4bac-9734-2fa7698f7464",
     "be41dbd4-c07a-4a7e-9e75-6c55ac8b1c05",
-    "99c42516-d134-4b78-a4ae-995a2ba1f170",
     "1664514253bdfb3651"
   ]
 }
