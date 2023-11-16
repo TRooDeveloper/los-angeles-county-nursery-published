@@ -1,1 +1,107 @@
-{"sections":{"banner":{"type":"banner--page","settings":{}},"content":{"type":"page","settings":{}}},"order":["banner","content"]}
+{
+  "sections": {
+    "banner": {
+      "type": "banner--page",
+      "settings": {
+        "layout": "default",
+        "height": 70,
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": "medium",
+        "contentColor": "rgba(0,0,0,0)",
+        "fillColor": "rgba(0,0,0,0)",
+        "overlayOpacity": 0,
+        "overlayColor": "#000000"
+      }
+    },
+    "content": {
+      "type": "page",
+      "settings": {
+        "layout": "default",
+        "enableShortcodes": false
+      }
+    },
+    "ea15c794-2e18-4934-9c54-d02337edcac1": {
+      "type": "section__content-text",
+      "blocks": {
+        "d323605c-79d0-4cff-8580-2328be4dffab": {
+          "type": "imageText",
+          "settings": {
+            "displayFor": "display--both",
+            "layout": "default",
+            "nomargin": false,
+            "scopedCSS": "",
+            "height": 0,
+            "padding": 0,
+            "lineMargin": 12,
+            "backgroundColor": "rgba(0,0,0,0)",
+            "contentColor": "rgba(0,0,0,0)",
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "imagePosition": "left",
+            "imageWidth": "6",
+            "overlayOpacity": 40,
+            "overlayColor": "#000000",
+            "heading": "Look at this image!",
+            "text": "<p>Section text for this image text block<\/p>",
+            "buttonText": "Get this now!",
+            "url": "",
+            "wideButton": false,
+            "buttonType": "primary",
+            "buttonStyle": "default"
+          }
+        }
+      },
+      "block_order": [
+        "d323605c-79d0-4cff-8580-2328be4dffab"
+      ],
+      "settings": {
+        "custom_id": ""
+      }
+    },
+    "89a1ac50-2e5e-4ad4-93ae-721664a6ec7c": {
+      "type": "section__content-text",
+      "blocks": {
+        "96fd9591-453f-4ff7-a533-1e910c7b5224": {
+          "type": "imageText",
+          "settings": {
+            "displayFor": "display--both",
+            "layout": "default",
+            "nomargin": false,
+            "scopedCSS": "",
+            "height": 0,
+            "padding": 0,
+            "lineMargin": 12,
+            "backgroundColor": "rgba(0,0,0,0)",
+            "contentColor": "rgba(0,0,0,0)",
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "imagePosition": "right",
+            "imageWidth": "6",
+            "overlayOpacity": 40,
+            "overlayColor": "#000000",
+            "heading": "Look at this image!",
+            "text": "<p>Section text for this image text block<\/p>",
+            "buttonText": "Get this now!",
+            "url": "",
+            "wideButton": false,
+            "buttonType": "primary",
+            "buttonStyle": "default"
+          }
+        }
+      },
+      "block_order": [
+        "96fd9591-453f-4ff7-a533-1e910c7b5224"
+      ],
+      "settings": {
+        "custom_id": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "content",
+    "ea15c794-2e18-4934-9c54-d02337edcac1",
+    "89a1ac50-2e5e-4ad4-93ae-721664a6ec7c"
+  ]
+}
