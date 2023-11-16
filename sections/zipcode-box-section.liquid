@@ -1,0 +1,622 @@
+<div class="zipcode-box-main" >
+  <div class="zipcode-box-outer">
+    <div class="zipcode-box-inner">
+      <div class="zipcode-box-col">
+        <div class="zipcode-box-col-inner">
+          <p>
+            Your Zipcode: 
+            <span class="zipcode">90046</span>
+            <span class="zone-tag local" style="display: none;">LOCAL</span>
+            <span class="zone-tag non-local" style="display: none;">NON LOCAL</span>
+            <a href="" class="change_your_zip">Change your Zipcode</a>
+          </p>
+        </div>
+      </div>
+      <div class="zipcode-box-col">
+        <div class="zipcode-box-col-inner">
+          <p>
+            Your Hardiness Zone:
+            <span class="zone">10b</span>
+            <a class="zone-info">Zone info {% if section.settings.zone-img-main != blank %}<span class="zone-img-main"><img src="{{ section.settings.zone-img-main | image_url }}" width="100" height="100" /></span>{% endif %}</a>
+            {% if section.settings.zone-img-icon != blank %}
+            <span class="zone-img-icon"><img src="{{ section.settings.zone-img-icon | image_url }}" width="100" height="100" /></span>
+            {% endif %}
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+<div class="zipcode-box-form" style="display:none;">
+  <div class="zipcode-box-form-outer">
+    <div class="zipcode-box-form-inner">
+      <div class="close-pop-up-btn">
+        <span><i class="uil uil-multiply"></i></span>
+      </div>
+      <div class="zipcode-box-form-modal">
+        <form id="zipcode-form" action="" method="post">
+          <h2>{{ section.settings.heading }}</h2>
+          <div class="zipcode-box-form-modal-description-one">
+            {{ section.settings.description }}
+          </div>
+          <div class="zipcode-box-form-modal-description-two">
+            {{ section.settings.paragraph }}
+          </div>
+          <input type="text" name="zipcode_change" id="zipcode">
+          <!-- <input type="submit" name="zipcode-submit" value="Submit" id="zipcode-submit"> -->
+          <button id="zipcode-submit">Submit</button>
+          <button class="close-form-btn">cancel</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+body.active_zip_form { overflow: hidden; }
+body.active_zip_form:before { content: ''; position: absolute; inset: 0; width: 100%; height: 100%; background-color: rgb(0 0 0 / 50%); z-index: 9999; }
+/* .zipcode-box-main { display: none; } */
+.zipcode-box-main { padding: 10px !important; background-color: #fff; width: 100% !important; max-width: var(--maxwidth); margin-right: auto; margin-left: auto; margin-top: 15px; }
+.zipcode-box-outer { border-radius: 10px; border: 1px solid #D1D0CE; background: #FCFAF7; box-shadow: 0px 10px 60px 0px rgba(104, 104, 104, 0.20);position: relative; }
+.zipcode-box-inner { width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; }
+.zipcode-box-col { width: 50%; }
+.zipcode-box-col-inner { padding: 10px; text-align: center; }
+.zipcode-box-col-inner p { margin: 0; display: flex; justify-content: center; align-items: center; color: #000; text-align: center; font-family: Roboto; font-size: 18px; font-style: normal; font-weight: 400; line-height: 32px; }
+.zipcode-box-col:last-child:before { content: ''; position: absolute; top: 50%; width: 2px; height: 70%; background-color: rgb(0 0 0 / 5%); transform: translateY(-50%); }
+.zipcode-box-col-inner p span { display: inline-block; margin-left: 16px; font-weight: 700; margin-right: 2px; }
+.zipcode-box-main a.change_your_zip { color: #A7B261; text-align: center; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 400; line-height: 32px; margin-left: 7px; text-decoration-line: underline; display: inline-block; }
+.zipcode-box-main span.zone-tag { padding: 4px 15px !important; border: 1px solid #ccc; margin: 0 10px; clear: both; color: #FFF; text-align: center; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal; background: #0B3D2C; }
+.zipcode-box-main a.zone-info { margin: 0 23px; color: #A7B261; text-align: center; font-family: Roboto; font-size: 18px; font-style: normal; font-weight: 400; line-height: 32px; text-decoration-line: underline; }
+.zipcode-box-form { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 999999; width: calc(100% - 30px); max-width: 580px; background-color: #fff; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); }
+.zipcode-box-form-inner { text-align: center; }
+.close-pop-up-btn { background: #fcfcfc; border-bottom: 1px solid #ddd; height: 29px; text-align: right; }
+.close-pop-up-btn span { width: 29px; height: 29px; padding: 0; cursor: pointer; display: inline-block; transition: color .1s ease-in-out, background .1s ease-in-out; margin: auto; font-size: 22px; text-align: center; }
+.zipcode-box-form-modal { padding: 20px 20px 80px; }
+.zipcode-box-form-modal h2 { font-size: 47.38px; color: #000; max-width: 430px; margin: auto; font-weight: 700; margin-bottom: 8px; }
+.zipcode-box-form-modal-description-one p,
+.zipcode-box-form-modal-description-two p { font-size: 11px; padding: 5px 0px 5px 0px; margin-bottom: 20px; color: #545454; }
+.zipcode-box-form-modal-description-two p { color: #ff0000; }
+.zipcode-box-form button.close-form-btn,
+.zipcode-box-form button#zipcode-submit { display: block; margin: 15px auto 0px; text-align: center; background: #4fc1e9; color: #fff; min-width: 220px; padding: 18px 16px 15px; text-transform: uppercase; border-radius: 0 !important; font-size: 14px; cursor: pointer; }
+.zipcode-box-form input#zipcode { display: block; margin: 15px auto 0px; text-align: center; border-color: rgba(84, 84, 84, 0.1) !important; font-size: 0.875rem; color: #444; background-color: #fff; border-width: 1px; border-style: solid; height: 2.5rem; outline: none; border-radius: 0; font-weight: 900; padding: 8px; max-width: 480px; width: 100%; }
+.zipcode-box-col-inner span.zone-img-icon { width: 55px; height: 35px; margin: 0 !important; }
+.zipcode-box-col-inner span.zone-img-icon img { display: block; }
+.zone-img-main { position: absolute; top: 101%; width: 100%; max-width: 800px; height: auto; z-index: 5; right: 0; box-shadow: 4px 4px 5px #55555569; transform: translateY(50px); opacity: 0; visibility: hidden; transition: all 800ms ease; }
+.zone-img-main.active { opacity: 1; visibility: visible; transform: translateY(00px); margin: 0; }
+.zone-img-main img { width: 100%; height: auto; display: block; object-fit: contain; }
+.zipcode-box-main span.zone-tag.non-local { background-color: #33a39b; }
+  
+@media only screen and (max-width:991px) {
+   .zipcode-box-col-inner p,.zipcode-box-main span.zone-tag,.zipcode-box-main a.zone-info { font-size: 14px; }
+}
+@media only screen and (max-width: 900px){
+.zipcode-box-col-inner p { font-size: 14px; justify-content: flex-start; }
+.zipcode-box-col { width: 100%; }
+.zipcode-box-col:last-child:before { display:none;}
+.zipcode-box-col:last-child { border-left: none; border-top: 1px solid #aaa; }
+.zipcode-box-main span.zone-tag { padding: 2px !important; }
+.zipcode-box-col-inner { padding: 3px 15px; text-align: left; }
+.zipcode-box-form-modal { padding: 20px; }
+.zipcode-box-form-modal h2 { font-size: 35px; }
+.zipcode-box-form button.close-form-btn,
+.zipcode-box-form button#zipcode-submit { padding: 12px 15px 10px; }
+}
+@media only screen and (max-width: 480px){
+.zipcode-box-main { margin-top: 0px; }
+.zipcode-box-main a.change_your_zip { display: block; margin-left: 0; }
+.zipcode-box-col-inner p { flex-wrap: wrap; }
+.zipcode-box-main a.zone-info { display: block; width: calc(100% - 55px); margin: 0; text-align: left; }
+.zipcode-box-col-inner span.zone-img-icon img { height: 100%; }
+.zipcode-box-col-inner span.zone-img-icon { height: 32px; }
+}
+</style>
+
+<script>
+  
+window.addEventListener('load', function() {
+    document.querySelector('.zipcode_change').addEventListener('keypress', function(e) {
+        if (e.which === 32) {
+            e.preventDefault();
+        }
+    });
+});
+  
+  function calculate_distance(customer_zip){
+    $("span.zone-tag").hide();
+    var store_zip = $('body').attr("data-store-zip");
+    
+    console.log("customer_zip ==> "+ customer_zip);
+    console.log("store_zip ==> "+ store_zip);
+
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+      // Example: Get the value of 'param1'
+      var var_id = getParameterByName('variant');
+
+          console.log("var Id -- "+var_id);
+    
+    var apiKey = 'AIzaSyCuxIHwRURiz6tcxTlJeR5DshsxyRI0Y6U';
+    var url = `https://curl.trooinbounddev.com/los-angeles-county-nursery/index.php?origins=${store_zip}&destinations=${customer_zip}`;
+
+    fetch(url)
+    .then(response => response.json()) // Parse the response as JSON
+    .then(data => {
+        console.log(data);
+        if (data.rows.length > 0 && data.rows[0].elements.length > 0) {
+          var distance = data.rows[0].elements[0].distance.text;
+          console.log('Distance: ' + distance);
+          var distance_new = distance.match(/\d+(\.\d+)?/);
+          var distance_in_mile = (parseFloat(distance_new)/1.609).toFixed(2);;
+            if(distance_in_mile > 150){
+              console.log('Distance in mile is -> ' + distance_in_mile + '  User is -> Non Local');
+              $(".zone-tag.non-local").show();
+              $("body").attr("userType","Non-Local");
+            }else{
+              console.log('Distance in mile is -> ' + distance_in_mile + '   User is -> Local');
+              $(".zone-tag.local").show();
+              $("body").attr("userType","Local");
+            }
+
+          // hide buttons
+          if($("body").hasClass("template--product")){
+            // custom_plant_type==Evergreen
+            // Condition 1
+            if($("input.custom_plant_type").length > 0){
+                if($("input.custom_plant_type").val() == "Evergreen"){
+                    if( $("body").attr("usertype") == "Non-Local"){
+                      console.log("Condition 1 - disable buttons -- Evergreen -- Non-Local");
+                      $(".shopify-product-form .button.button--addToCart").attr("disabled","disabled");
+                      $(".shopify-product-form div.shopify-payment-button button.shopify-payment-button__button").attr("disabled","disabled");                  
+                    }else{
+                      $(".shopify-product-form .button.button--addToCart").removeAttr("disabled","disabled");
+                      $(".shopify-product-form div.shopify-payment-button button.shopify-payment-button__button").removeAttr("disabled","disabled");   
+                      
+                    }
+                }
+            }
+          
+          // Condition 2
+            if($("input.custom_plant_type").length > 0){
+                if($("input.custom_plant_type").val() == "Deciduous"){
+                  if($("body").attr("usertype") == "Non-Local" && $(".variant_dropshipping[data-var-id='"+var_id+"']").val() == "false"){
+                   console.log("Condition 2 -- Deciduous -- Non-Local -- Dropshipping False - Disable button");
+                   $(".shopify-product-form .button.button--addToCart").attr("disabled","disabled");
+                   $(".shopify-product-form div.shopify-payment-button button.shopify-payment-button__button").attr("disabled","disabled");
+                }else{
+                  $(".shopify-product-form .button.button--addToCart").removeAttr("disabled","disabled");
+                  $(".shopify-product-form div.shopify-payment-button button.shopify-payment-button__button").removeAttr("disabled","disabled");   
+                }
+              }
+            }                          
+          }
+          // hide buttons end
+          
+        } else {
+          console.log('Distance not found');
+        }
+      })
+      .catch(error => console.log('error', error));
+}
+
+// function calculate_distance(customerZip) {
+//     document.querySelectorAll("span.zone-tag").forEach(function (tag) {
+//         tag.style.display = "none";
+//     });
+
+//     var storeZip = document.querySelector('body').getAttribute("data-store-zip");
+
+//     console.log("customer_zip ==> " + customerZip);
+//     console.log("store_zip ==> " + storeZip);
+
+//     var apiKey = 'AIzaSyCuxIHwRURiz6tcxTlJeR5DshsxyRI0Y6U';
+//     var url = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/distancematrix/json?origins=${storeZip}&destinations=${customerZip}&key=${apiKey}`;
+
+//     var xhr = new XMLHttpRequest();
+//     xhr.open('GET', url, true);
+//     xhr.setRequestHeader('Content-Type', 'application/json');
+//     xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+
+//     xhr.onload = function () {
+//         if (xhr.status === 200) {
+//             var data = JSON.parse(xhr.responseText);
+
+//             console.log(data);
+
+//             if (data.rows.length > 0 && data.rows[0].elements.length > 0) {
+//                 var distance = data.rows[0].elements[0].distance.text;
+//                 console.log('Distance: ' + distance);
+
+//                 var distanceNew = distance.match(/\d+(\.\d+)?/);
+//                 var distanceInMile = (parseFloat(distanceNew) / 1.609).toFixed(2);
+
+//                 if (distanceInMile > 150) {
+//                     console.log('Distance in mile is -> ' + distanceInMile + '  User is -> Non Local');
+//                     document.querySelector(".zone-tag.non-local").style.display = "block";
+//                     document.querySelector("body").setAttribute("userType", "Non-Local");
+//                 } else {
+//                     console.log('Distance in mile is -> ' + distanceInMile + '   User is -> Local');
+//                     document.querySelector(".zone-tag.local").style.display = "block";
+//                     document.querySelector("body").setAttribute("userType", "Local");
+//                 }
+
+//                 // hide buttons
+//                 if (document.querySelector("body").classList.contains("template--product")) {
+//                     // custom_plant_type==Evergreen
+//                     // Condition 1
+//                     var customPlantTypeInput = document.querySelector("input.custom_plant_type");
+//                     if (customPlantTypeInput) {
+//                         if (customPlantTypeInput.value === "Evergreen" && document.querySelector("body").getAttribute("userType") === "Non-Local") {
+//                             console.log(" Condition 1 - disable buttons");
+//                             document.querySelector(".shopify-product-form .button.button--addToCart").setAttribute("disabled", "disabled");
+//                             document.querySelector("div.shopify-payment-button button.shopify-payment-button__button").setAttribute("disabled", "disabled");
+//                         }
+//                     }
+
+//                     // Condition 2
+//                     if (customPlantTypeInput) {
+//                         var variantDropshippingInput = document.querySelector(".variant_dropshipping.selected");
+//                         if (customPlantTypeInput.value === "Deciduous" && document.querySelector("body").getAttribute("userType") === "Non-Local" && variantDropshippingInput && variantDropshippingInput.value === "false") {
+//                             console.log(" Condition 2- disable button");
+//                             document.querySelector(".shopify-product-form .button.button--addToCart").setAttribute("disabled", "disabled");
+//                             document.querySelector("div.shopify-payment-button button.shopify-payment-button__button").setAttribute("disabled", "disabled");
+//                         }
+//                     }
+//                 }
+//                 // hide buttons end
+
+//             } else {
+//                 console.log('Distance not found');
+//             }
+//         } else {
+//             console.log('Error fetching distance');
+//         }
+//     };
+
+//     xhr.onerror = function () {
+//         console.log('Error fetching distance');
+//     };
+
+//     xhr.send();
+// }
+
+  
+window.addEventListener('load', function() {
+  var zipcodeSpan = document.querySelector('.zipcode-box-col-inner p span.zipcode');
+  var zoneSpan = document.querySelector('.zipcode-box-col-inner p span.zone');
+  // var oldzipcodeSpan = document.querySelector('#desktopZipBox .zipcode-box .zipcode b');
+  // var oldzoneSpan = document.querySelector('#desktopZipBox .zone-box .zone b');
+  var oldzoneSpan = '';
+  var Hardiness_zones;
+  var Hardiness_zones_form;
+  var Hardiness_zones_to;
+  
+  const my_zipcode = localStorage.getItem("my_zipcode");
+  const my_zone = localStorage.getItem("my_zone");
+  var hardiness_zone_my = parseInt(my_zone);
+  
+  if (my_zipcode && my_zone) {
+    zipcodeSpan.textContent = my_zipcode;
+    zoneSpan.textContent = my_zone;
+    // bypass Ms
+    calculate_distance(my_zipcode);
+    // oldzipcodeSpan.textContent = my_zipcode;
+    oldzoneSpan.textContent = my_zone;
+  
+    document.querySelectorAll('.product__urgency .urgency__text span p strong').forEach(element => {
+      let text = element.textContent;
+      
+      if (text.includes("Hardiness")) {
+        Hardiness_zones = element.parentElement.textContent.split(': ')[1];
+        Hardiness_zones_form = parseInt(Hardiness_zones.split('-')[0]);
+        Hardiness_zones_to = parseInt(Hardiness_zones.split('-')[1]);
+      }
+      
+      if (text.includes("zone")) {
+  
+          console.log(Hardiness_zones_form, Hardiness_zones_to);
+  
+          if (Hardiness_zones_form <= hardiness_zone_my && Hardiness_zones_to >= hardiness_zone_my) {
+              document.querySelectorAll('.product__atc .button--addToCart, .product__atc .shopify-payment-button__button').forEach(button => {
+                  //button.removeAttribute('disabled');
+                  element.textContent = "COMPATIBLE with your zone (" + my_zone + ")";
+                  element.style = "color: #099989";
+              });
+          } else {
+              document.querySelectorAll('.product__atc .button--addToCart, .product__atc .shopify-payment-button__button').forEach(button => {
+                  //button.setAttribute('disabled', 'true');
+                  element.textContent = "NOT COMPATIBLE with your zone (" + my_zone + ")";
+                  element.style = "color: red";
+              });
+          }
+      }
+    });
+  }else{
+    document.querySelector('.zipcode-box-form').style.display = 'block';
+    document.body.classList.add('active_zip_form');
+    // var defaultZip = $("div.zipcode-box-col-inner span.zipcode").text();
+var defaultZip = document.querySelector("div.zipcode-box-col-inner span.zipcode").textContent;
+
+    $('.zipcode').text('○○○○○');
+    $('.zone').text('○○');
+    document.querySelectorAll('.product__urgency .urgency__text span p strong').forEach(element => {
+            var text_c = element.textContent;
+            if (text_c.includes("zone")) {
+                 element.style = "display:none;";
+            }
+    });
+    
+    // calculate_distance(defaultZip);
+  }
+  
+  
+        
+  document.querySelectorAll('.product__urgency .urgency__text span p strong').forEach(element => {
+      let text = element.textContent;
+  
+      if (text.includes("Hardiness")) {
+          Hardiness_zones = element.parentElement.textContent.split(': ')[1];
+          Hardiness_zones_form = parseInt(Hardiness_zones.split('-')[0]);
+          Hardiness_zones_to = parseInt(Hardiness_zones.split('-')[1]);
+  
+          //console.log(Hardiness_zones_form, Hardiness_zones_to);
+  
+          if (Hardiness_zones_form <= hardiness_zone_my && Hardiness_zones_to >= hardiness_zone_my) {
+              document.querySelectorAll('.product__atc .button--addToCart, .product__atc .shopify-payment-button__button').forEach(button => {
+                  button.removeAttribute('disabled');
+              });
+            
+             setTimeout(function () {
+               $(".shopify-product-form div.shopify-payment-button button.shopify-payment-button__button").removeAttr("disabled","disabled");
+           }, 500);
+            
+            // $(".shopify-product-form div.shopify-payment-button button.shopify-payment-button__button").removeAttr("disabled");
+          } else {
+              document.querySelectorAll('.product__atc .button--addToCart, .product__atc .shopify-payment-button__button').forEach(button => {
+                  button.setAttribute('disabled', 'true');
+              });
+            
+            setTimeout(function () {
+               $(".shopify-product-form div.shopify-payment-button button.shopify-payment-button__button").attr("disabled","disabled");
+           }, 500);
+            // $(".shopify-product-form div.shopify-payment-button button.shopify-payment-button__button").attr("disabled","disabled");
+          }
+      }
+  });
+
+  
+});
+  
+// open pop-up js
+const changeYourZipLink = document.querySelector('.zipcode-box-main a.change_your_zip');
+const closePopUpElements = document.querySelectorAll('.close-pop-up-btn span, .zipcode-box-form button.close-form-btn');
+const body = document.body;
+const zipcodeBoxForm = document.querySelector('.zipcode-box-form');
+
+changeYourZipLink.addEventListener('click', function(e) {
+  e.preventDefault();
+  body.classList.add('active_zip_form');
+  zipcodeBoxForm.style.display = 'block';
+});
+
+closePopUpElements.forEach(function(element) {
+  element.addEventListener('click', function(e) {
+    e.preventDefault();
+    zipcodeBoxForm.style.display = 'none';
+    body.classList.remove('active_zip_form');
+  });
+});
+  
+// window.addEventListener('load', function() {
+//   const oldChangeYourZipLink = document.querySelector('#showzipcodemodal');
+//   oldChangeYourZipLink.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     body.classList.add('active_zip_form');
+//     zipcodeBoxForm.style.display = 'block';
+//   });
+
+// });  
+
+var zoneInfo = document.querySelector('.zone-info');
+var zoneImgMain = document.querySelector('.zone-img-main');
+
+zoneInfo.addEventListener('mouseenter', function() {
+    zoneImgMain.classList.add('active');
+});
+
+zoneInfo.addEventListener('mouseleave', function() {
+    zoneImgMain.classList.remove('active');
+});
+
+  
+// pop-up form js
+// var myHeaders = new Headers();
+// myHeaders.append("X-RapidAPI-Host", "plant-hardiness-zone.p.rapidapi.com");
+// myHeaders.append("X-RapidAPI-Key", "6db128a2efmsh52ef2963e5737b7p13f48fjsn133d90db1e66");
+
+// var requestOptions = {
+//   method: 'GET',
+//   headers: myHeaders,
+//   redirect: 'follow'
+// };
+
+document.querySelector('.zipcode-box-form button#zipcode-submit').addEventListener('click', function (e) {
+  e.preventDefault();
+  var siblingElement = this.parentNode.querySelector('#zipcode');
+  var zipcode_val = siblingElement.value;
+  var Hardiness_zones;
+  var Hardiness_zones_form ;
+  var Hardiness_zones_to;
+
+  // var defaultZip = $("div.zipcode-box-col-inner span.zipcode").text();
+  
+  
+  fetch("https://curl.trooinbounddev.com/los-angeles-county-nursery/index.php?zip=" + zipcode_val)
+    .then(response => response.json()) // Parse the response as JSON
+    .then(data => {
+      // Update the content of the elements with the response data
+      if(data != null){
+        if(data.hasOwnProperty('hardiness_zone')){
+        
+        var zipcodeSpan = document.querySelector('.zipcode-box-col-inner p span.zipcode');
+        var zoneSpan = document.querySelector('.zipcode-box-col-inner p span.zone');
+        // var oldzipcodeSpan = document.querySelector('#desktopZipBox .zipcode-box .zipcode b');
+          var oldzipcodeSpan = '';
+        // var oldzoneSpan = document.querySelector('#desktopZipBox .zone-box .zone b');
+          var oldzoneSpan = '';
+        var hardiness_zone_my = parseInt(data.hardiness_zone);
+        
+        if (zipcodeSpan && zoneSpan) {
+          zipcodeSpan.textContent = data.zipcode; // Update with the actual data property
+          zoneSpan.textContent = data.hardiness_zone; // Update with the actual data property
+        }
+  
+        if (oldzipcodeSpan && oldzoneSpan) {
+          oldzipcodeSpan.textContent = data.zipcode; // Update with the actual data property
+          oldzoneSpan.textContent = data.hardiness_zone; // Update with the actual data property
+        }
+        
+        document.querySelectorAll('.product__urgency .urgency__text span p strong').forEach(element => {
+          let text = element.textContent;
+          if (text.includes("Hardiness")) {
+            Hardiness_zones = element.parentElement.textContent.split(': ')[1];
+            Hardiness_zones_form = parseInt(Hardiness_zones.split('-')[0]);
+            Hardiness_zones_to = parseInt(Hardiness_zones.split('-')[1]);
+          }
+          if (text.includes("zone")) {
+            //console.log(Hardiness_zones_form, Hardiness_zones_to);
+    
+            if (Hardiness_zones_form <= hardiness_zone_my && Hardiness_zones_to >= hardiness_zone_my) {
+                document.querySelectorAll('.product__atc .button--addToCart, .product__atc .shopify-payment-button__button').forEach(button => {
+                    //button.removeAttribute('disabled');
+                    element.textContent = "COMPATIBLE with your zone (" + data.hardiness_zone + ")";
+                    element.style = "color: #099989";
+                });
+            } else {
+                document.querySelectorAll('.product__atc .button--addToCart, .product__atc .shopify-payment-button__button').forEach(button => {
+                    //button.setAttribute('disabled', 'true');
+                    element.textContent = "NOT COMPATIBLE with your zone (" + data.hardiness_zone + ")";
+                    element.style = "color: red";
+                });
+            }
+          }
+        });
+        
+        localStorage.setItem("my_zipcode", data.zipcode);
+        localStorage.setItem("my_zone", data.hardiness_zone);
+        
+        zipcodeBoxForm.style.display = 'none';
+        body.classList.remove('active_zip_form');
+  
+        calculate_distance(zipcode_val);
+        
+        document.querySelectorAll('.product__urgency .urgency__text span p strong').forEach(element => {
+            let text = element.textContent;
+        
+            if (text.includes("Hardiness")) {
+                Hardiness_zones = element.parentElement.textContent.split(': ')[1];
+                Hardiness_zones_form = parseInt(Hardiness_zones.split('-')[0]);
+                Hardiness_zones_to = parseInt(Hardiness_zones.split('-')[1]);
+        
+                console.log(Hardiness_zones_form, Hardiness_zones_to);
+        
+                if (Hardiness_zones_form <= hardiness_zone_my && Hardiness_zones_to >= hardiness_zone_my) {
+                    document.querySelectorAll('.product__atc .button--addToCart, .product__atc .shopify-payment-button__button').forEach(button => {
+                        button.removeAttribute('disabled');
+                    });
+                  // $(".shopify-product-form div.shopify-payment-button button.shopify-payment-button__button").removeAttr("disabled","disabled");
+                  
+                  setTimeout(function () {
+                     $(".shopify-product-form div.shopify-payment-button button.shopify-payment-button__button").removeAttr("disabled","disabled");
+                 }, 500);
+                  
+                } else {
+                    document.querySelectorAll('.product__atc .button--addToCart, .product__atc .shopify-payment-button__button').forEach(button => {
+                        button.setAttribute('disabled', 'true');
+                    });
+                  
+                  setTimeout(function () {
+                     $(".shopify-product-form div.shopify-payment-button button.shopify-payment-button__button").attr("disabled","disabled");
+                 }, 500);
+                  
+                  // $(".shopify-product-form div.shopify-payment-button button.shopify-payment-button__button").attr("disabled","disabled");
+                }
+            }
+        });
+        }else{
+          var element_v = document.querySelector('.zipcode-box-form-modal-description-two');
+          if (element_v) {
+            element_v.innerHTML = '<p>Invalid Zip code</p>';
+          }  
+        }
+      }else{
+        var element_v = document.querySelector('.zipcode-box-form-modal-description-two');
+        if (element_v) {
+          element_v.innerHTML = '<p>Invalid Zip code</p>';
+        }
+      }
+    })
+    .catch(error => console.log('error', error));
+});
+  
+//$(document).ready(function(){});
+
+
+
+  
+</script>
+
+{% schema %}
+  {
+    "name": "Zipcode Pop-up Section",
+    "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "What's your zipcode?",
+          "label": "Pop-up Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Pop-up Description"
+        },
+        {
+          "type": "richtext",
+          "id": "paragraph",
+          "label": "Pop-up Paragraph"
+        },
+        {
+          "type": "image_picker",
+          "id": "zone-img-icon",
+          "label": "Zone icon"
+        },
+        {
+          "type": "image_picker",
+          "id": "zone-img-main",
+          "label": "Zone Pop-up Image"
+        }
+    ],
+    "presets": [
+        {"name": "Zipcode Pop-up"}
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
