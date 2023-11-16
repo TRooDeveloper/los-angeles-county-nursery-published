@@ -64,7 +64,7 @@
           "settings": {
             "fullWidth": false,
             "text": "Explore Trees",
-            "url": "",
+            "url": "shopify:\/\/collections",
             "icon": "",
             "iconPosition": "icon--left",
             "wideButton": false,
