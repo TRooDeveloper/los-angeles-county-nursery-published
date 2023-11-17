@@ -162,7 +162,7 @@
               "width": "1-5",
               "horizontalAlignment": "start",
               "verticalAlignment": "top",
-              "image": "shopify:\/\/shop_images\/LA-County-Nursery-logo.png",
+              "image": "{{ shop.brand.square_logo }}",
               "imageWidth": 70,
               "url": "",
               "imageAlt": "logo"
