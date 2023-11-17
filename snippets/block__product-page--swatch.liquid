@@ -55,12 +55,8 @@
         <h4 class="h-reset swatches__title">{{product_option.name}} <span data-swatch-selected-name="{{product.id}}-{{index}}"></span></h4>
         {% case selector_type %}
             {% when 'dropdown' %}
-              {% assign variantIdMap = {} %}
-              {% for variant in product.variants %}
-              {% assign key = variant.options | join: '-' %}
-              {% assign variantIdMap[key] = variant.id %}
-              {% endfor %}
-                <select  id="product-options_c" data-swatch-index="{{product.id}}-{{index}}">
+          
+                <select data-swatch-index="{{product.id}}-{{index}}">
                     <option value="bstrSelectNill" selected>Select a {{product_option_lc}}</option>
                     {% for value in product_option.values %}
                         {% assign vars = avvars | where: optix, value %}
