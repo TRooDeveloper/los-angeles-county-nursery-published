@@ -71,7 +71,7 @@
     "backTopBtn": false,
     "checkout_logo_image": "shopify:\/\/shop_images\/LACN-Reversed-Logo.png",
     "checkout_body_background_color": "#106b61",
-    "checkout_input_background_color_mode": "transparent",
+    "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_color": "#106b61",
     "checkout_accent_color": "#a7b261",
     "checkout_button_color": "#a7b261",
