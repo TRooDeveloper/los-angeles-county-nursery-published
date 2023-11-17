@@ -214,88 +214,6 @@ body.active_zip_form:before { content: ''; position: absolute; inset: 0; width: 
       })
       .catch(error => console.log('error', error));
 }
-
-// function calculate_distance(customerZip) {
-//     document.querySelectorAll("span.zone-tag").forEach(function (tag) {
-//         tag.style.display = "none";
-//     });
-
-//     var storeZip = document.querySelector('body').getAttribute("data-store-zip");
-
-//     console.log("customer_zip ==> " + customerZip);
-//     console.log("store_zip ==> " + storeZip);
-
-//     var apiKey = 'AIzaSyCuxIHwRURiz6tcxTlJeR5DshsxyRI0Y6U';
-//     var url = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/distancematrix/json?origins=${storeZip}&destinations=${customerZip}&key=${apiKey}`;
-
-//     var xhr = new XMLHttpRequest();
-//     xhr.open('GET', url, true);
-//     xhr.setRequestHeader('Content-Type', 'application/json');
-//     xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-
-//     xhr.onload = function () {
-//         if (xhr.status === 200) {
-//             var data = JSON.parse(xhr.responseText);
-
-//             console.log(data);
-
-//             if (data.rows.length > 0 && data.rows[0].elements.length > 0) {
-//                 var distance = data.rows[0].elements[0].distance.text;
-//                 console.log('Distance: ' + distance);
-
-//                 var distanceNew = distance.match(/\d+(\.\d+)?/);
-//                 var distanceInMile = (parseFloat(distanceNew) / 1.609).toFixed(2);
-
-//                 if (distanceInMile > 150) {
-//                     console.log('Distance in mile is -> ' + distanceInMile + '  User is -> Non Local');
-//                     document.querySelector(".zone-tag.non-local").style.display = "block";
-//                     document.querySelector("body").setAttribute("userType", "Non-Local");
-//                 } else {
-//                     console.log('Distance in mile is -> ' + distanceInMile + '   User is -> Local');
-//                     document.querySelector(".zone-tag.local").style.display = "block";
-//                     document.querySelector("body").setAttribute("userType", "Local");
-//                 }
-
-//                 // hide buttons
-//                 if (document.querySelector("body").classList.contains("template--product")) {
-//                     // custom_plant_type==Evergreen
-//                     // Condition 1
-//                     var customPlantTypeInput = document.querySelector("input.custom_plant_type");
-//                     if (customPlantTypeInput) {
-//                         if (customPlantTypeInput.value === "Evergreen" && document.querySelector("body").getAttribute("userType") === "Non-Local") {
-//                             console.log(" Condition 1 - disable buttons");
-//                             document.querySelector(".shopify-product-form .button.button--addToCart").setAttribute("disabled", "disabled");
-//                             document.querySelector("div.shopify-payment-button button.shopify-payment-button__button").setAttribute("disabled", "disabled");
-//                         }
-//                     }
-
-//                     // Condition 2
-//                     if (customPlantTypeInput) {
-//                         var variantDropshippingInput = document.querySelector(".variant_dropshipping.selected");
-//                         if (customPlantTypeInput.value === "Deciduous" && document.querySelector("body").getAttribute("userType") === "Non-Local" && variantDropshippingInput && variantDropshippingInput.value === "false") {
-//                             console.log(" Condition 2- disable button");
-//                             document.querySelector(".shopify-product-form .button.button--addToCart").setAttribute("disabled", "disabled");
-//                             document.querySelector("div.shopify-payment-button button.shopify-payment-button__button").setAttribute("disabled", "disabled");
-//                         }
-//                     }
-//                 }
-//                 // hide buttons end
-
-//             } else {
-//                 console.log('Distance not found');
-//             }
-//         } else {
-//             console.log('Error fetching distance');
-//         }
-//     };
-
-//     xhr.onerror = function () {
-//         console.log('Error fetching distance');
-//     };
-
-//     xhr.send();
-// }
-
   
 window.addEventListener('load', function() {
   var zipcodeSpan = document.querySelector('.zipcode-box-col-inner p span.zipcode');
@@ -335,13 +253,13 @@ window.addEventListener('load', function() {
           if (Hardiness_zones_form <= hardiness_zone_my && Hardiness_zones_to >= hardiness_zone_my) {
               document.querySelectorAll('.product__atc .button--addToCart, .product__atc .shopify-payment-button__button').forEach(button => {
                   //button.removeAttribute('disabled');
-                  element.textContent = "COMPATIBLE with your zone (" + my_zone + ")";
+                  element.textContent = "COMPATIBILITY : COMPATIBLE with your zone (" + my_zone + ")";
                   element.style = "color: #099989";
               });
           } else {
               document.querySelectorAll('.product__atc .button--addToCart, .product__atc .shopify-payment-button__button').forEach(button => {
                   //button.setAttribute('disabled', 'true');
-                  element.textContent = "NOT COMPATIBLE with your zone (" + my_zone + ")";
+                  element.textContent = "COMPATIBILITY : NOT COMPATIBLE with your zone (" + my_zone + ")";
                   element.style = "color: red";
               });
           }
@@ -445,17 +363,6 @@ zoneInfo.addEventListener('mouseleave', function() {
 });
 
   
-// pop-up form js
-// var myHeaders = new Headers();
-// myHeaders.append("X-RapidAPI-Host", "plant-hardiness-zone.p.rapidapi.com");
-// myHeaders.append("X-RapidAPI-Key", "6db128a2efmsh52ef2963e5737b7p13f48fjsn133d90db1e66");
-
-// var requestOptions = {
-//   method: 'GET',
-//   headers: myHeaders,
-//   redirect: 'follow'
-// };
-
 document.querySelector('.zipcode-box-form button#zipcode-submit').addEventListener('click', function (e) {
   e.preventDefault();
   var siblingElement = this.parentNode.querySelector('#zipcode');
@@ -505,13 +412,13 @@ document.querySelector('.zipcode-box-form button#zipcode-submit').addEventListen
             if (Hardiness_zones_form <= hardiness_zone_my && Hardiness_zones_to >= hardiness_zone_my) {
                 document.querySelectorAll('.product__atc .button--addToCart, .product__atc .shopify-payment-button__button').forEach(button => {
                     //button.removeAttribute('disabled');
-                    element.textContent = "COMPATIBLE with your zone (" + data.hardiness_zone + ")";
+                    element.textContent = "COMPATIBILITY : COMPATIBLE with your zone (" + data.hardiness_zone + ")";
                     element.style = "color: #099989";
                 });
             } else {
                 document.querySelectorAll('.product__atc .button--addToCart, .product__atc .shopify-payment-button__button').forEach(button => {
                     //button.setAttribute('disabled', 'true');
-                    element.textContent = "NOT COMPATIBLE with your zone (" + data.hardiness_zone + ")";
+                    element.textContent = "COMPATIBILITY : NOT COMPATIBLE with your zone (" + data.hardiness_zone + ")";
                     element.style = "color: red";
                 });
             }
