@@ -236,8 +236,9 @@ window.addEventListener('load', function() {
     calculate_distance(my_zipcode);
     // oldzipcodeSpan.textContent = my_zipcode;
     oldzoneSpan.textContent = my_zone;
-  
+
     document.querySelectorAll('.product__urgency .urgency__text span p strong').forEach(element => {
+
       let text = element.textContent;
       
       if (text.includes("Hardiness")) {
@@ -245,6 +246,12 @@ window.addEventListener('load', function() {
         Hardiness_zones_form = parseInt(Hardiness_zones.split('-')[0]);
         Hardiness_zones_to = parseInt(Hardiness_zones.split('-')[1]);
       }
+      
+    });
+  
+    document.querySelectorAll('.product__urgency .urgency__text span p strong').forEach(element => {
+      let text = element.textContent;
+      
       
       if (text.includes("COMPATIBILITY")) {
   
@@ -399,14 +406,13 @@ document.querySelector('.zipcode-box-form button#zipcode-submit').addEventListen
           oldzoneSpan.textContent = data.hardiness_zone; // Update with the actual data property
         }
 
-          document.querySelectorAll('.product__urgency .urgency__text span p strong').forEach(element => {
+        document.querySelectorAll('.product__urgency .urgency__text span p strong').forEach(element => {
           let text = element.textContent;
           if (text.includes("Hardiness")) {
             Hardiness_zones = element.parentElement.textContent.split(': ')[1];
             Hardiness_zones_form = parseInt(Hardiness_zones.split('-')[0]);
             Hardiness_zones_to = parseInt(Hardiness_zones.split('-')[1]);
-          }
-            
+          } 
         });
         
         document.querySelectorAll('.product__urgency .urgency__text span p strong').forEach(element => {
