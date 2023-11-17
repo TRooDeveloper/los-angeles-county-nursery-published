@@ -328,7 +328,7 @@ window.addEventListener('load', function() {
         Hardiness_zones_to = parseInt(Hardiness_zones.split('-')[1]);
       }
       
-      if (text.includes("zone")) {
+      if (text.includes("COMPATIBILITY")) {
   
           console.log(Hardiness_zones_form, Hardiness_zones_to);
   
@@ -357,7 +357,7 @@ var defaultZip = document.querySelector("div.zipcode-box-col-inner span.zipcode"
     $('.zone').text('○○');
     document.querySelectorAll('.product__urgency .urgency__text span p strong').forEach(element => {
             var text_c = element.textContent;
-            if (text_c.includes("zone")) {
+            if (text_c.includes("COMPATIBILITY")) {
                  element.style = "display:none;";
             }
     });
@@ -499,7 +499,7 @@ document.querySelector('.zipcode-box-form button#zipcode-submit').addEventListen
             Hardiness_zones_form = parseInt(Hardiness_zones.split('-')[0]);
             Hardiness_zones_to = parseInt(Hardiness_zones.split('-')[1]);
           }
-          if (text.includes("zone")) {
+          if (text.includes("COMPATIBILITY")) {
             //console.log(Hardiness_zones_form, Hardiness_zones_to);
     
             if (Hardiness_zones_form <= hardiness_zone_my && Hardiness_zones_to >= hardiness_zone_my) {
