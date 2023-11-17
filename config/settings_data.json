@@ -55,6 +55,7 @@
     "cardStyle": "noButton",
     "tagOffset": 10,
     "collectionCardTextAlign": "center",
+    "defaultSelector": "dropdown",
     "cartStyle": "none",
     "dynamicCheckout": false,
     "cartAction": "cart",
