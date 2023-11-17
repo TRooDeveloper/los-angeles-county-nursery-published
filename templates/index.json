@@ -392,6 +392,10 @@
     },
     "64ddf9c4-6431-4bac-9734-2fa7698f7464": {
       "type": "section__featured-collection",
+      "custom_css": [
+        ".container.container-fluid-custom-mobile-padding .slick-prev,.container.container-fluid-custom-mobile-padding .slick-next {border-radius: 19px; background: rgba(234, 91, 78, 0.05);}",
+        ".container.container-fluid-custom-mobile-padding .slick-prev:before,.container.container-fluid-custom-mobile-padding .slick-next:before {color: #EA5B4E;}"
+      ],
       "settings": {
         "custom_id": "",
         "displayFor": "display--both",
