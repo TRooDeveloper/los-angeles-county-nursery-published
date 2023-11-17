@@ -61,7 +61,7 @@ window.addEventListener('load', function() {
 
 
 
-  var swatches = document.querySelectorAll('.product__swatches span[data-swatch-option]');
+  var swatches = document.querySelectorAll('.swatches__holder select');
 
 // Define a function to handle the click event
 function handleClick(event) {
@@ -113,7 +113,7 @@ function handleClick(event) {
 
 // Loop through all matched elements and attach a click event listener
 swatches.forEach(function(swatch) {
-    swatch.addEventListener('click', handleClick);
+    swatch.addEventListener('change', handleClick);
 });
 
 });
