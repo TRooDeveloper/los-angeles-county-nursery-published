@@ -16,7 +16,7 @@
             {% render 'button__submit', text: tran_checkout, name: 'checkout' %}
         </div>
     </div>
-<div id="storePickupApp"></div>
+
     {% assign totalAmount = 0 %}
     {% for item in cart.items %}
     {% assign product = item.variant %}
