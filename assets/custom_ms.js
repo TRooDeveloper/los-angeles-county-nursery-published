@@ -97,7 +97,7 @@ function handleClick(event) {
           
           // Condition 2
             if($("input.custom_plant_type").length > 0){
-                if($("input.custom_plant_type").val() == "Deciduous" && $("body").attr("usertype") == "Non-Local" && $(".variant_dropshipping[data-var-id='"+var_id+"']").val() != "false"){
+                if($("input.custom_plant_type").val() == "Deciduous" && $("body").attr("usertype") == "Non-Local" && $(".variant_dropshipping[data-var-id='"+var_id+"']").val() == "false"){
                   console.log("Condition 2 -- Deciduous -- Non-Local -- Dropshipping False - disable button");
                   $(".shopify-product-form .button.button--addToCart").attr("disabled","disabled");
                   $(".shopify-product-form div.shopify-payment-button button.shopify-payment-button__button").attr("disabled","disabled");
