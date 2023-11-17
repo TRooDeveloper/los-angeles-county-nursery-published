@@ -264,13 +264,13 @@ window.addEventListener('load', function() {
           if (Hardiness_zones_form <= hardiness_zone_my && Hardiness_zones_to >= hardiness_zone_my) {
               document.querySelectorAll('.product__atc .button--addToCart, .product__atc .shopify-payment-button__button').forEach(button => {
                   //button.removeAttribute('disabled');
-                  element.textContent = "COMPATIBILITY : COMPATIBLE with your zone (" + my_zone + ")";
+                  element.textContent = "COMPATIBILITY : Compatible with your zone (" + my_zone + ")";
                   element.style = "color: #099989";
               });
           } else {
               document.querySelectorAll('.product__atc .button--addToCart, .product__atc .shopify-payment-button__button').forEach(button => {
                   //button.setAttribute('disabled', 'true');
-                  element.textContent = "COMPATIBILITY : NOT COMPATIBLE with your zone (" + my_zone + ")";
+                  element.textContent = "COMPATIBILITY : Not Compatible with your zone (" + my_zone + ")";
                   element.style = "color: red";
               });
           }
@@ -427,13 +427,13 @@ document.querySelector('.zipcode-box-form button#zipcode-submit').addEventListen
             if (Hardiness_zones_form <= hardiness_zone_my && Hardiness_zones_to >= hardiness_zone_my) {
                 document.querySelectorAll('.product__atc .button--addToCart, .product__atc .shopify-payment-button__button').forEach(button => {
                     //button.removeAttribute('disabled');
-                    element.textContent = "COMPATIBILITY : COMPATIBLE with your zone (" + data.hardiness_zone + ")";
+                    element.textContent = "COMPATIBILITY : Compatible with your zone (" + data.hardiness_zone + ")";
                     element.style = "color: #099989";
                 });
             } else {
                 document.querySelectorAll('.product__atc .button--addToCart, .product__atc .shopify-payment-button__button').forEach(button => {
                     //button.setAttribute('disabled', 'true');
-                    element.textContent = "COMPATIBILITY : NOT COMPATIBLE with your zone (" + data.hardiness_zone + ")";
+                    element.textContent = "COMPATIBILITY : Not Compatible with your zone (" + data.hardiness_zone + ")";
                     element.style = "color: red";
                 });
             }
