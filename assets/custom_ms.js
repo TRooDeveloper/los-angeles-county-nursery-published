@@ -124,3 +124,12 @@ swatches.forEach(function(swatch) {
 
 
 
+document.getElementById('product-options_c').addEventListener('change', function() {
+  var selectedOptions = Array.from(document.querySelectorAll('#product-options_c option:checked')).map(function(option) {
+    return option.textContent;
+  });
+  var variantKey = selectedOptions.join('-');
+  var variantId = {{ variantIdMap[variantKey] | default: "null" }};
+  console.log("Selected Variant ID: ", variantId);
+  // You can now use the variantId as needed.
+});
