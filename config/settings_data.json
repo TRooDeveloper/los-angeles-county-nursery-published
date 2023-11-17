@@ -112,7 +112,7 @@
             "type": "infoBadge",
             "settings": {
               "icon": "shopping-cart",
-              "heading": "This is awesome!",
+              "heading": "Discounts",
               "subheading": "This is even more info about how awesome this is!"
             }
           },
@@ -120,7 +120,7 @@
             "type": "infoBadge",
             "settings": {
               "icon": "shopping-cart",
-              "heading": "This is awesome!",
+              "heading": "In-Store Pickup",
               "subheading": "There is no way it can get any more awesome?!"
             }
           }
