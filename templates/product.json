@@ -116,7 +116,7 @@
             "noMargin": false,
             "icon": "none",
             "iconColor": "rgba(0,0,0,0)",
-            "text": "<p><strong>COMPATIBILITY<\/strong><\/p>",
+            "text": "<p><strong>COMPATIBILITY : <\/strong><\/p>",
             "textColor": "#099989"
           }
         },
