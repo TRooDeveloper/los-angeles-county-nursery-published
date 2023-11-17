@@ -119,4 +119,4 @@ swatches.forEach(function(swatch) {
 });
 
 
-
+console.log($(body));
