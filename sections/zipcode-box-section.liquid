@@ -160,8 +160,10 @@ window.addEventListener('load', function() {
           console.log('Distance: ' + distance);
           
           // var distance_new = distance.match(/\d+(\.\d+)?/);
-           var distance_new = parseFloat(distance.replace(/,/g, ''));
-          var distance_in_mile = (parseFloat(distance_new)/1.609).toFixed(2);;
+          // var distance_in_mile = (parseFloat(distance_new)/1.609).toFixed(2);
+          
+          var distance_new = parseFloat(distance.replace(/,/g, ''));
+          var distance_in_mile = (distance_new/1.609).toFixed(2);
             if(distance_in_mile > 150){
               console.log('Distance in mile is -> ' + distance_in_mile + '  User is -> Non Local');
               $(".zone-tag.non-local").show();
