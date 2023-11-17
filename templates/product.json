@@ -239,6 +239,7 @@
         },
         "0733e003-3c14-4f49-bbf2-ebcc7837ac24": {
           "type": "productPageTab",
+          "disabled": true,
           "settings": {
             "showInline": false,
             "heading": "Plant Care Information",
@@ -270,7 +271,7 @@
             "metafieldNS": "global",
             "metafieldKey": "",
             "page": "",
-            "customContent": "<p>Add custom content here!<\/p>"
+            "customContent": "<p>Our plants are guaranteed to be true-to-name as labeled and in good condition when received. “Local pickup” means the customer will pick up at our nursery.  “Delivery” does NOT include planting, and customer must arrange to receive items once offloaded from our truck. Our driver may move items as a courtesy, but is not responsible for moving items further onto your property. Returns\/Refunds are subject to a 10% restocking fee.<\/p>"
           }
         },
         "ec346ebe-0fe7-496b-92c9-82b09a703842": {
