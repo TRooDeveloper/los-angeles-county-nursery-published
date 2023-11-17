@@ -101,6 +101,10 @@ function handleClick(event) {
                   console.log("Condition 2 -- Deciduous -- Non-Local -- Dropshipping False - disable button");
                   $(".shopify-product-form .button.button--addToCart").attr("disabled","disabled");
                   $(".shopify-product-form div.shopify-payment-button button.shopify-payment-button__button").attr("disabled","disabled");
+                }else if($("input.custom_plant_type").val() == "Deciduous" && $("body").attr("usertype") == "Local" && $(".variant_dropshipping[data-var-id='"+var_id+"']").val() == "false"){
+                  console.log("Condition 2 -- Deciduous -- Non-Local -- Dropshipping False - disable button");
+                  $(".shopify-product-form .button.button--addToCart").attr("disabled","disabled");
+                  $(".shopify-product-form div.shopify-payment-button button.shopify-payment-button__button").attr("disabled","disabled");
                 }
             }
             }, 100);
