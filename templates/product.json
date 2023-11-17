@@ -307,7 +307,7 @@
       "settings": {
         "view": "default",
         "layout": "max-width",
-        "galleryStyle": "verticalDouble",
+        "galleryStyle": "default",
         "galleryPosition": "left",
         "autoZoom": false,
         "autoChange": false,
