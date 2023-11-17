@@ -410,7 +410,7 @@ document.querySelector('.zipcode-box-form button#zipcode-submit').addEventListen
         });
         
         document.querySelectorAll('.product__urgency .urgency__text span p strong').forEach(element => {
-          
+          let text = element.textContent;
           if (text.includes("COMPATIBILITY")) {
             //console.log(Hardiness_zones_form, Hardiness_zones_to);
     
