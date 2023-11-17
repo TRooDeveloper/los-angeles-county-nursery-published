@@ -118,13 +118,13 @@ body.active_zip_form:before { content: ''; position: absolute; inset: 0; width: 
 
 <script>
   
-window.addEventListener('load', function() {
-    document.querySelector('.zipcode_change').addEventListener('keypress', function(e) {
-        if (e.which === 32) {
-            e.preventDefault();
-        }
-    });
-});
+// window.addEventListener('load', function() {
+//     document.querySelector('.zipcode_change').addEventListener('keypress', function(e) {
+//         if (e.which === 32) {
+//             e.preventDefault();
+//         }
+//     });
+// });
   
   function calculate_distance(customer_zip){
     $("span.zone-tag").hide();
