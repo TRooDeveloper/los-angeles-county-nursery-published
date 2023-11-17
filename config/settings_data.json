@@ -69,6 +69,7 @@
     "gdpr": false,
     "floatingContact": true,
     "backTopBtn": false,
+    "checkout_logo_image": "shopify:\/\/shop_images\/LACN-Reversed-Logo.png",
     "sections": {
       "top-info-bar": {
         "type": "top-info-bar",
