@@ -59,7 +59,7 @@
                     <option value="bstrSelectNill" selected>Select a {{product_option_lc}}</option>
                     {% for value in product_option.values %}
                         {% assign vars = avvars | where: optix, value %}
-                        <option {% if vars.size == 0 %} disabled data-swatch-soldout="true"{% endif %} value="{{value | escape}}" data-swatch-index="{{product.id}}-{{index}}">{{value}}</option>
+                        <option data-idd="{{ vars.id }}" {% if vars.size == 0 %} disabled data-swatch-soldout="true"{% endif %} value="{{value | escape}}" data-swatch-index="{{product.id}}-{{index}}">{{value}}</option>
                     {% endfor %}
                 </select>
             {% when 'swatch' %}
