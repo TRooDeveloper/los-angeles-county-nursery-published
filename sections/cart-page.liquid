@@ -194,11 +194,14 @@
   let cartPage = {};
   cartPage.removeItem = async (t, id)=>{
     let res = await BoosterTheme.cart.removeFromCart(false, id);
+    cartPage.updateCart()
   }
 
   cartPage.updateCart = async ()=>{
     let time = new Date().getTime();
+    
     let cartData = await fetch(`${window.Shopify.routes.root}?section_id=cart-page`, {headers: { 'Pragma': 'no-cache', 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Expires': 0 }}).then((data)=> data.text());
+    
     let div = document.createElement('div');
     let currentCart = document.querySelector('.shopify-section.section--cart-page');
     if(currentCart.dataset.lastUpdate > time){
@@ -215,10 +218,12 @@
 {% unless settings.ajaxType == "disabled" %}
   cartPage.quantityHandler = (event, req)=>{
     let res = BoosterTheme.cart.quantityHandler(event, req);
+    cartPage.updateCart();
   }
 
   cartPage.updateQuantity = async (event)=>{
     await BoosterTheme.cart.updateQuantity(event);
+    cartPage.updateCart();
   }
 {% else %}
   cartPage.quantityHandler = (event, req)=>{
@@ -232,6 +237,7 @@
       input.value = ++value;
     }
     cartPage.updateQuantity({target: input});
+    cartPage.updateCart();
   }
 
   cartPage.updateQuantity = async (event)=>{
@@ -243,9 +249,9 @@
     }
   }
 {% endunless %}
-document.addEventListener('booster:cart:update', (e)=>{
-    cartPage.updateCart()
-})
+// document.addEventListener('booster:cart:update', (e)=>{
+//     cartPage.updateCart()
+// })
   </script>
 
 {% schema %}
