@@ -122,13 +122,16 @@ body.active_zip_form:before { content: ''; position: absolute; inset: 0; width: 
 
 <script>
   
-// window.addEventListener('load', function() {
-//     document.querySelector('.zipcode_change').addEventListener('keypress', function(e) {
-//         if (e.which === 32) {
-//             e.preventDefault();
-//         }
-//     });
-// });
+window.addEventListener('load', function() {
+    // Add disabled condition on select box
+    if($("input.custom_plant_type").val() == "Deciduous"){
+      if($('.variant_dropshipping[value="true"]').length > 0){
+          $('.variant_dropshipping[value="true"]').each(function(){
+            $('.product__swatches select option[value="'+$(this).attr('data-prod-title').trim()+'"]').prop('disabled',true).next().prop('selected',true);
+        });
+      }
+    }
+});
   
   function calculate_distance(customer_zip){
     $("span.zone-tag").hide();
