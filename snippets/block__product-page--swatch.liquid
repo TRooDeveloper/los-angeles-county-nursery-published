@@ -63,6 +63,11 @@
                         <option {% if vars.size == 0 %} disabled data-swatch-soldout="true"{% endif %} value="{{value | escape}}" data-swatch-index="{{product.id}}-{{index}}">{{value}}</option>
                     {% endfor %}
                 </select>
+                <select style="display:none;" class="heree">
+                  {% for variant in product.variants %}
+                      <option val="{{ variant.id }}"> {{ variant.title }}</option>
+                  {% endfor %}
+                </select>
             {% when 'swatch' %}
                 {% assign ix = product_option.position | minus: 1 | append: '' %}
                 {% if imageArray contains product_option_lc %}
