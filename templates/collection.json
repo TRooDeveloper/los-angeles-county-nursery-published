@@ -43,7 +43,7 @@
           "settings": {
             "hideDisabled": false,
             "expanded": true,
-            "useSwatch": true,
+            "useSwatch": false,
             "useSwatchList": "color, colour"
           }
         },
