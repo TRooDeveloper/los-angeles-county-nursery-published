@@ -166,7 +166,7 @@ window.addEventListener('load', function() {
     }
 
   $('.variant_c_select').each(function(){
-      $(this).find('option').each(function(){
+      $(this).find('option').not($(this).find('option').attr('disabled')).each(function(){
            var ul=$(this).parent().parent().find('ul');
           var listItem = $('<li data-map="'+ $(this).attr('value')+'">' + $(this).text() +'</li>');
           ul.append(listItem);
