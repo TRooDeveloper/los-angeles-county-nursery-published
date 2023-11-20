@@ -6,7 +6,7 @@
   
   {% for var in product.variants %}
     
-        <input type="hidden" data-prod-title="{{ var.title }}" data-var-id="{{ var.id }}" value="{% if var.metafields.custom.dropshipping != blank %}{{ var.metafields.custom.dropshipping }}{% else %}false{% endif %}" class="variant_dropshipping {% if product.selected_or_first_available_variant.id == var.id %} selected{% endif %}">
+        <input type="hidden" data-prod-title='{{ var.title }}' data-var-id="{{ var.id }}" value="{% if var.metafields.custom.dropshipping != blank %}{{ var.metafields.custom.dropshipping }}{% else %}false{% endif %}" class="variant_dropshipping {% if product.selected_or_first_available_variant.id == var.id %} selected{% endif %}">
     
   {% endfor %}  
 {% endif %}
