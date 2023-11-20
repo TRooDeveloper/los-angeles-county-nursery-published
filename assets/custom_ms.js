@@ -68,11 +68,13 @@ function handleClick(event) {
     
     // hide buttons
           if($("body").hasClass("template--product") && $("body").attr("usertype") ){
-    if($('.variant_dropshipping[value="true"]').length > 0){
-        $('.variant_dropshipping[value="true"]').each(function(){
-          $('.product__swatches select option[value="'+$(this).attr('data-prod-title').trim()+'"]').prop('disabled',true);
-      });
-    }
+            if($("input.custom_plant_type").val() == "Deciduous"){
+              if($('.variant_dropshipping[value="true"]').length > 0){
+                  $('.variant_dropshipping[value="true"]').each(function(){
+                    $('.product__swatches select option[value="'+$(this).attr('data-prod-title').trim()+'"]').prop('disabled',true);
+                });
+              }
+          }
 
     function getParameterByName(name, url) {
       if (!url) url = window.location.href;
