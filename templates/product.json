@@ -249,6 +249,18 @@
             "customContent": "<p>Add custom content here!<\/p>"
           }
         },
+        "20ebc526-75d5-401b-b886-b013a01024fa": {
+          "type": "productPageTab",
+          "settings": {
+            "showInline": false,
+            "heading": "Watering",
+            "content": "description",
+            "metafieldNS": "global",
+            "metafieldKey": "",
+            "page": "",
+            "customContent": "<p>Add custom content here!<\/p>"
+          }
+        },
         "0733e003-3c14-4f49-bbf2-ebcc7837ac24": {
           "type": "productPageTab",
           "disabled": true,
@@ -290,18 +302,6 @@
             "heading": "Product description",
             "noMargin": false
           }
-        },
-        "20ebc526-75d5-401b-b886-b013a01024fa": {
-          "type": "productPageTab",
-          "settings": {
-            "showInline": false,
-            "heading": "Plant Care",
-            "content": "description",
-            "metafieldNS": "global",
-            "metafieldKey": "",
-            "page": "",
-            "customContent": "<p>Add custom content here!<\/p>"
-          }
         }
       },
       "block_order": [
@@ -324,11 +324,11 @@
         "b1e4fcb8-d3c0-4627-ad91-a80b10e713d6",
         "e1c9d01f-78f1-4759-aaf2-ed325099a226",
         "05cf9080-7a2a-4b3f-aa4d-80eed2b680a0",
+        "20ebc526-75d5-401b-b886-b013a01024fa",
         "0733e003-3c14-4f49-bbf2-ebcc7837ac24",
         "34c82b2d-74a4-4f8b-b63b-25be4314f514",
         "ec346ebe-0fe7-496b-92c9-82b09a703842",
-        "cfd162ab-e315-458f-849d-75e283a882f1",
-        "20ebc526-75d5-401b-b886-b013a01024fa"
+        "cfd162ab-e315-458f-849d-75e283a882f1"
       ],
       "settings": {
         "view": "default",
