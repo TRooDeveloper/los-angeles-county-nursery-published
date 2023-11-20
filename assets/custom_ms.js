@@ -72,6 +72,9 @@ function handleClick(event) {
               if($('.variant_dropshipping[value="true"]').length > 0){
                   $('.variant_dropshipping[value="true"]').each(function(){
                     $('.product__swatches select option[value="'+$(this).attr('data-prod-title').trim()+'"]').prop('disabled',true);
+                    var swatchesde = document.getElementById('variant_c_select');
+                    var event = new Event("change");
+                    swatchesde.dispatchEvent(event);
                 });
               }
           }
