@@ -216,15 +216,6 @@ body.active_zip_form:before { content: ''; position: absolute; inset: 0; width: 
           }
           // hide buttons end
 
-
-          // Add disabled condition on select box
-          if($("input.custom_plant_type").val() == "Deciduous"){
-            if($('.variant_dropshipping[value="true"]').length > 0){
-                $('.variant_dropshipping[value="true"]').each(function(){
-                  $('.product__swatches select option[value="'+$(this).attr('data-prod-title').trim()+'"]').prop('disabled',true).next().prop('selected',true);
-              });
-            }
-          }
           
         } else {
           console.log('Distance not found');
