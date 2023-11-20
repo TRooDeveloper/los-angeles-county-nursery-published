@@ -78,15 +78,16 @@
             "verticalAlignment": "middle",
             "imagePosition": "right",
             "imageWidth": "6",
+            "image": "shopify:\/\/shop_images\/Majid-Jahanbin-Photo.webp",
             "overlayOpacity": 40,
             "overlayColor": "#000000",
-            "heading": "Look at this image!",
-            "text": "<p>Section text for this image text block<\/p>",
-            "buttonText": "Get this now!",
+            "heading": "Decades of Expertise",
+            "text": "<p>Paradise Nursery was founded in Chatsworth, California by Dr. Majid Jahanbin after he immigrated with his family to the United States from Iran. Dr. Jahanbin holds a Doctorate in Agricultural Science from the University of Bologna, Italy. He was a long-time host of a gardening radio show in Los Angeles and authored a book in Farsi titled <a href=\"https:\/\/paradisenursery.com\/product\/get-to-know-the-language-of-plants-thousand-and-one-questions-and-answers-about-plant-issues-and-problems\/\">‘Get to Know the Language of Plants – One Thousand and One Questions and Answers.<\/a> Under Dr. Jahanbin’s tutelage, his son Ashkan learned the language.<\/p>",
+            "buttonText": "",
             "url": "",
             "wideButton": false,
             "buttonType": "primary",
-            "buttonStyle": "default"
+            "buttonStyle": "text"
           }
         }
       },
