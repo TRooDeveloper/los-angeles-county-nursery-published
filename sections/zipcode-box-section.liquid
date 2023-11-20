@@ -108,11 +108,15 @@ body.active_zip_form:before { content: ''; position: absolute; inset: 0; width: 
 }
 @media only screen and (max-width: 480px){
 .zipcode-box-main { margin-top: 0px; }
-.zipcode-box-main a.change_your_zip { display: block; margin-left: 0; }
-.zipcode-box-col-inner p { flex-wrap: wrap; }
-.zipcode-box-main a.zone-info { display: block; width: calc(100% - 55px); margin: 0; text-align: left; }
+.zipcode-box-main a.change_your_zip { display: block; margin-left: 0;width: 100%; }
+.zipcode-box-col-inner p { flex-wrap: wrap; justify-content: center; }
+.zipcode-box-main a.zone-info {     display: block;
+    width: 100%;
+    order: 1; }
 .zipcode-box-col-inner span.zone-img-icon img { height: 100%; }
-.zipcode-box-col-inner span.zone-img-icon { height: 32px; }
+.zipcode-box-col-inner span.zone-img-icon { height: 32px;    margin: 0px 10px !important;}
+  .zipcode-box-col-inner { padding: 3px 0px;}
+  .zipcode-box-inner { padding: 0 15px; }
 }
 </style>
 
