@@ -68,6 +68,12 @@
                       <option val="{{ variant.id }}"> {{ variant.title }}</option>
                   {% endfor %}
                 </select>
+
+           <div class="dropdown" style="display:none;">
+            <button class="dropbtn">Select a size</button>
+            <ul class="ulList">
+            </ul>
+          </div>
             <ul class="ulList" style="display:none;"></ul>
             {% when 'swatch' %}
                 {% assign ix = product_option.position | minus: 1 | append: '' %}
