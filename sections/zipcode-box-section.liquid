@@ -120,8 +120,18 @@ body.active_zip_form:before { content: ''; position: absolute; inset: 0; width: 
 }
 
   .custom-dropdown {
-      position: relative;
-      display: inline-block;
+        position: relative;
+        display: inline-block;
+        /* padding: 0.5rem; */
+        border-radius: var(--borderRadiusSmall);
+        font-size: var(--smallFontSize);
+        font-family: inherit;
+        /* font-size: 100%; */
+        line-height: 1.15;
+        margin: 0;
+        background: var(--inputFill);
+        color: var(--inputContent);
+        border: 1px solid #e2e2e2;
     }
 
     .custom-dropdown .dropbtn {
