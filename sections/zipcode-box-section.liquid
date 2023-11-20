@@ -175,6 +175,9 @@ window.addEventListener('load', function() {
 
   $('.dropdown-content ul li').click(function(){
       $(this).parents('.swatches__holder').find(".variant_c_select option[value='"+$(this).attr("data-map")+"']").prop('selected',true);
+    var swatchesde = document.getElementById('variant_c_select');
+            var event = new Event("change");
+            swatchesde.dispatchEvent(event);
   })
 
 
