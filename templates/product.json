@@ -241,7 +241,7 @@
           "type": "productPageTab",
           "settings": {
             "showInline": false,
-            "heading": "Planting Information",
+            "heading": "Planting",
             "content": "description",
             "metafieldNS": "global",
             "metafieldKey": "",
