@@ -169,7 +169,7 @@ window.addEventListener('load', function() {
           if($("input.custom_plant_type").val() == "Deciduous"){
               if($('.variant_dropshipping[value="true"]').length > 0){
                   $('.variant_dropshipping[value="true"]').each(function(){
-                    $('.product__swatches select option[value="'+$(this).attr('data-prod-title').trim()+'"]').prop('disabled',true);
+                     $('.product__swatches select option[value="'+$(this).attr('data-prod-title').trim()+'"]').prop('disabled',true).next().prop('selected',true);
                 });
               }
           }
