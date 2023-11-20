@@ -237,6 +237,18 @@
             "customContent": "<p>Plant most citrus trees about 10 – 15 feet apart. Some varieties like Grapefruits and Oranges can grow larger.\n\nPlanning is the most important step when planting a tree. Plant your tree where it has enough space to grow to its full potential. Otherwise, your tree will grow into your surrounding trees.  A tree that can grow taller with faster growth will overshadow nearby trees. You may need to move other trees to allow for the one that is thriving rather than cutting back one that naturally grows fast and tall.<\/p>"
           }
         },
+        "05cf9080-7a2a-4b3f-aa4d-80eed2b680a0": {
+          "type": "productPageTab",
+          "settings": {
+            "showInline": false,
+            "heading": "Planting Information",
+            "content": "description",
+            "metafieldNS": "global",
+            "metafieldKey": "",
+            "page": "",
+            "customContent": "<p>Add custom content here!<\/p>"
+          }
+        },
         "0733e003-3c14-4f49-bbf2-ebcc7837ac24": {
           "type": "productPageTab",
           "disabled": true,
@@ -299,6 +311,7 @@
         "e1ef4a1e-3206-413c-b8e3-f36d20330875",
         "b1e4fcb8-d3c0-4627-ad91-a80b10e713d6",
         "e1c9d01f-78f1-4759-aaf2-ed325099a226",
+        "05cf9080-7a2a-4b3f-aa4d-80eed2b680a0",
         "0733e003-3c14-4f49-bbf2-ebcc7837ac24",
         "34c82b2d-74a4-4f8b-b63b-25be4314f514",
         "ec346ebe-0fe7-496b-92c9-82b09a703842",
