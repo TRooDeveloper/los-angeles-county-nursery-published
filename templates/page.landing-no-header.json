@@ -21,83 +21,6 @@
         "enableShortcodes": false
       }
     },
-    "89a1ac50-2e5e-4ad4-93ae-721664a6ec7c": {
-      "type": "section__content-text",
-      "blocks": {
-        "96fd9591-453f-4ff7-a533-1e910c7b5224": {
-          "type": "imageText",
-          "settings": {
-            "displayFor": "display--both",
-            "layout": "default",
-            "nomargin": false,
-            "scopedCSS": "",
-            "height": 0,
-            "padding": 0,
-            "lineMargin": 12,
-            "backgroundColor": "rgba(0,0,0,0)",
-            "contentColor": "rgba(0,0,0,0)",
-            "horizontalAlignment": "center",
-            "verticalAlignment": "middle",
-            "imagePosition": "right",
-            "imageWidth": "4",
-            "image": "shopify:\/\/shop_images\/Majid-Jahanbin-Photo.webp",
-            "overlayOpacity": 40,
-            "overlayColor": "#000000",
-            "heading": "DR. MAJID JAHANBIN",
-            "text": "<p>Paradise Nursery was founded in Chatsworth, California by Dr. Majid Jahanbin after he immigrated with his family to the United States from Iran. Dr. Jahanbin holds a Doctorate in Agricultural Science from the University of Bologna, Italy. He was a long-time host of a gardening radio show in Los Angeles and authored a book in Farsi titled <a href=\"https:\/\/paradisenursery.com\/product\/get-to-know-the-language-of-plants-thousand-and-one-questions-and-answers-about-plant-issues-and-problems\/\">‘Get to Know the Language of Plants – One Thousand and One Questions and Answers.<\/a> Under Dr. Jahanbin’s tutelage, his son Ashkan learned the language.<\/p>",
-            "buttonText": "",
-            "url": "",
-            "wideButton": false,
-            "buttonType": "primary",
-            "buttonStyle": "text"
-          }
-        }
-      },
-      "block_order": [
-        "96fd9591-453f-4ff7-a533-1e910c7b5224"
-      ],
-      "settings": {
-        "custom_id": ""
-      }
-    },
-    "6cc07b0e-1922-48e0-88eb-0a3b0f52f64c": {
-      "type": "section__content-text",
-      "blocks": {
-        "2badcbbe-f752-4d40-82ff-75e6d12bd329": {
-          "type": "imageText",
-          "settings": {
-            "displayFor": "display--both",
-            "layout": "default",
-            "nomargin": false,
-            "scopedCSS": "",
-            "height": 0,
-            "padding": 0,
-            "lineMargin": 12,
-            "backgroundColor": "rgba(0,0,0,0)",
-            "contentColor": "rgba(0,0,0,0)",
-            "horizontalAlignment": "center",
-            "verticalAlignment": "middle",
-            "imagePosition": "left",
-            "imageWidth": "6",
-            "overlayOpacity": 40,
-            "overlayColor": "#000000",
-            "heading": "",
-            "text": "<p><strong>Ashkan Jahanbin holds degrees in Environmental Horticulture Science and Landscape Architecture from California Polytechnic State University, San Luis Obispo. Ashkan was a landscape designer, consultant, and contractor. Creating beautiful, useful, and environmentally sustainable landscapes. He now focuses on our company, customers, and plants here at Paradise Nursery.<\/strong><\/p><p>From our family and staff to yours,<br\/>Happy Harvests!<\/p>",
-            "buttonText": "Get this now!",
-            "url": "",
-            "wideButton": false,
-            "buttonType": "primary",
-            "buttonStyle": "default"
-          }
-        }
-      },
-      "block_order": [
-        "2badcbbe-f752-4d40-82ff-75e6d12bd329"
-      ],
-      "settings": {
-        "custom_id": ""
-      }
-    },
     "215b1de9-657e-4bf3-b410-9f01d02bf487": {
       "type": "section__image-text",
       "blocks": {
@@ -154,13 +77,70 @@
         "imageOverlayOpacity": 0,
         "imageOverlayColor": "#000000"
       }
+    },
+    "5d4f3464-322f-4263-aa80-bd2083deaab2": {
+      "type": "section__image-text",
+      "blocks": {
+        "template--15363253502063__5d4f3464-322f-4263-aa80-bd2083deaab2-title-1": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "template--15363253502063__5d4f3464-322f-4263-aa80-bd2083deaab2-richText-1": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>Paradise Nursery was founded in Chatsworth, California by Dr. Majid Jahanbin after he immigrated with his family to the United States from Iran. Dr. Jahanbin holds a Doctorate in Agricultural Science from the University of Bologna, Italy. He was a long-time host of a gardening radio show in Los Angeles and authored a book in Farsi titled <a href=\"https:\/\/paradisenursery.com\/product\/get-to-know-the-language-of-plants-thousand-and-one-questions-and-answers-about-plant-issues-and-problems\/\">‘Get to Know the Language of Plants – One Thousand and One Questions and Answers.<\/a> Under Dr. Jahanbin’s tutelage, his son Ashkan learned the language.<\/p><p>Ashkan Jahanbin holds degrees in Environmental Horticulture Science and Landscape Architecture from California Polytechnic State University, San Luis Obispo. Ashkan was a landscape designer, consultant, and contractor. Creating beautiful, useful, and environmentally sustainable landscapes. He now focuses on our company, customers, and plants here at Paradise Nursery.<\/p><p>From our family and staff to yours,<br\/><br\/>Happy Harvests!<\/p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "base"
+          }
+        }
+      },
+      "block_order": [
+        "template--15363253502063__5d4f3464-322f-4263-aa80-bd2083deaab2-title-1",
+        "template--15363253502063__5d4f3464-322f-4263-aa80-bd2083deaab2-richText-1"
+      ],
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "imagePosition": "left",
+        "imageWidth": "4",
+        "image": "shopify:\/\/shop_images\/Majid-Jahanbin-Photo.webp",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
     }
   },
   "order": [
     "banner",
     "content",
-    "89a1ac50-2e5e-4ad4-93ae-721664a6ec7c",
-    "6cc07b0e-1922-48e0-88eb-0a3b0f52f64c",
-    "215b1de9-657e-4bf3-b410-9f01d02bf487"
+    "215b1de9-657e-4bf3-b410-9f01d02bf487",
+    "5d4f3464-322f-4263-aa80-bd2083deaab2"
   ]
 }
