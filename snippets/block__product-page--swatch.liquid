@@ -68,7 +68,7 @@
                       <option val="{{ variant.id }}"> {{ variant.title }}</option>
                   {% endfor %}
                 </select>
-            <ul id="ulList"></ul>
+            <ul id="ulList" style="display:none;"></ul>
             {% when 'swatch' %}
                 {% assign ix = product_option.position | minus: 1 | append: '' %}
                 {% if imageArray contains product_option_lc %}
