@@ -170,17 +170,17 @@
               "horizontalAlignment": "start",
               "verticalAlignment": "top",
               "image": "{{ shop.brand.square_logo }}",
-              "imageWidth": 70,
-              "url": "",
+              "imageWidth": 50,
+              "url": "#",
               "imageAlt": "logo"
             }
           },
           "0e188e08-01bf-4244-8aa3-997ce12eca05": {
             "type": "footerText",
             "settings": {
-              "width": "1-5",
+              "width": "3",
               "horizontalAlignment": "start",
-              "verticalAlignment": "middle",
+              "verticalAlignment": "top",
               "heading": "Los Angele County Nursery",
               "text": "<p>Los Angeles County Nursery is a registered trademark owned exclusively by Majid Nursery Inc. in the United States and other jurisdictions.<\/p>"
             }
@@ -225,6 +225,16 @@
               "heading": "Follow Us"
             }
           },
+          "a84d7fdc-e400-46a6-aa34-68d829fccd84": {
+            "type": "footerText",
+            "settings": {
+              "width": "auto",
+              "horizontalAlignment": "center",
+              "verticalAlignment": "middle",
+              "heading": "",
+              "text": "<p>© 2023 Los Angeles County Nursery<\/p>"
+            }
+          },
           "85595977-364c-45a5-9ace-51092ab8ab1b": {
             "type": "footerPayment",
             "settings": {
@@ -235,16 +245,6 @@
               "customIcons": true,
               "icons": "master, paypal, shopify_pay, visa, afterpay, american_express, apple_pay,"
             }
-          },
-          "a84d7fdc-e400-46a6-aa34-68d829fccd84": {
-            "type": "footerText",
-            "settings": {
-              "width": "auto",
-              "horizontalAlignment": "center",
-              "verticalAlignment": "middle",
-              "heading": "",
-              "text": "<p>© 2023 Los Angeles County Nursery<\/p>"
-            }
           }
         },
         "block_order": [
@@ -254,8 +254,8 @@
           "b747a565-96e4-4014-bc96-cef92f052ce3",
           "27c980e8-3f46-43eb-887d-581fab03676b",
           "06e04fbf-1646-47c1-849b-5f2b943d143a",
-          "85595977-364c-45a5-9ace-51092ab8ab1b",
-          "a84d7fdc-e400-46a6-aa34-68d829fccd84"
+          "a84d7fdc-e400-46a6-aa34-68d829fccd84",
+          "85595977-364c-45a5-9ace-51092ab8ab1b"
         ],
         "settings": {
           "layout": "default",
