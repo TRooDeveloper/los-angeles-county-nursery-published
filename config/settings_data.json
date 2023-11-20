@@ -185,21 +185,10 @@
               "text": "<p>Los Angeles County Nursery is a registered trademark owned exclusively by Majid Nursery Inc. in the United States and other jurisdictions.<\/p>"
             }
           },
-          "79c988f6-1297-4df0-9e07-f6f74537046f": {
-            "type": "footerLinks",
-            "disabled": true,
-            "settings": {
-              "width": "1-5",
-              "horizontalAlignment": "start",
-              "verticalAlignment": "middle",
-              "heading": "Categories",
-              "links": "footer"
-            }
-          },
           "b747a565-96e4-4014-bc96-cef92f052ce3": {
             "type": "footerLinks",
             "settings": {
-              "width": "auto",
+              "width": "1-5",
               "horizontalAlignment": "start",
               "verticalAlignment": "top",
               "heading": "Links",
@@ -209,7 +198,7 @@
           "27c980e8-3f46-43eb-887d-581fab03676b": {
             "type": "footerLinks",
             "settings": {
-              "width": "auto",
+              "width": "1-5",
               "horizontalAlignment": "start",
               "verticalAlignment": "top",
               "heading": "Policies",
@@ -219,7 +208,7 @@
           "06e04fbf-1646-47c1-849b-5f2b943d143a": {
             "type": "footerSocial",
             "settings": {
-              "width": "auto",
+              "width": "1-5",
               "horizontalAlignment": "start",
               "verticalAlignment": "top",
               "heading": "Follow Us"
@@ -250,7 +239,6 @@
         "block_order": [
           "26cad84a-2eda-4e0e-afe3-43967582effd",
           "0e188e08-01bf-4244-8aa3-997ce12eca05",
-          "79c988f6-1297-4df0-9e07-f6f74537046f",
           "b747a565-96e4-4014-bc96-cef92f052ce3",
           "27c980e8-3f46-43eb-887d-581fab03676b",
           "06e04fbf-1646-47c1-849b-5f2b943d143a",
