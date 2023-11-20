@@ -60,6 +60,7 @@
         "b73817d9-cfd8-4ac3-b416-09a513fcc960",
         "7569e6b7-65a2-46a9-a5c4-338dc9b65b59"
       ],
+      "disabled": true,
       "settings": {
         "filter": true
       }
