@@ -217,7 +217,7 @@
           "type": "productPageTab",
           "settings": {
             "showInline": false,
-            "heading": "Description",
+            "heading": "Plant Description",
             "content": "description",
             "metafieldNS": "global",
             "metafieldKey": "",
