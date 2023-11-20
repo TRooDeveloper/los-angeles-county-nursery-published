@@ -71,8 +71,9 @@
         "contentColor": "rgba(0,0,0,0)",
         "horizontalAlignment": "center",
         "verticalAlignment": "middle",
-        "imagePosition": "left",
-        "imageWidth": "6",
+        "imagePosition": "right",
+        "imageWidth": "8",
+        "image": "shopify:\/\/shop_images\/Nursery-entrance.webp",
         "image_url": "",
         "imageOverlayOpacity": 0,
         "imageOverlayColor": "#000000"
