@@ -56,7 +56,7 @@
         {% case selector_type %}
             {% when 'dropdown' %}
           
-                <select data-swatch-index="{{product.id}}-{{index}}">
+                <select id="variant_c_select" data-swatch-index="{{product.id}}-{{index}}">
                     <option value="bstrSelectNill" selected>Select a {{product_option_lc}}</option>
                     {% for value in product_option.values %}
                         {% assign vars = avvars | where: optix, value %}
