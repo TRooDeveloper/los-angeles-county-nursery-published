@@ -56,7 +56,7 @@
         {% case selector_type %}
             {% when 'dropdown' %}
           
-                <select id="variant_c_select" data-swatch-index="{{product.id}}-{{index}}">
+                <select class="variant_c_select" data-swatch-index="{{product.id}}-{{index}}">
                     <option value="bstrSelectNill" selected>Select a {{product_option_lc}}</option>
                     {% for value in product_option.values %}
                         {% assign vars = avvars | where: optix, value %}
@@ -68,7 +68,7 @@
                       <option val="{{ variant.id }}"> {{ variant.title }}</option>
                   {% endfor %}
                 </select>
-            <ul id="ulList" style="display:none;"></ul>
+            <ul class="ulList" style="display:none;"></ul>
             {% when 'swatch' %}
                 {% assign ix = product_option.position | minus: 1 | append: '' %}
                 {% if imageArray contains product_option_lc %}
