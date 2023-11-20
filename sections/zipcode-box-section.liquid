@@ -165,6 +165,14 @@ window.addEventListener('load', function() {
         if (data.rows.length > 0 && data.rows[0].elements.length > 0) {
           var distance = data.rows[0].elements[0].distance.text;
           console.log('Distance: ' + distance);
+
+          if($("input.custom_plant_type").val() == "Deciduous"){
+              if($('.variant_dropshipping[value="true"]').length > 0){
+                  $('.variant_dropshipping[value="true"]').each(function(){
+                    $('.product__swatches select option[value="'+$(this).attr('data-prod-title').trim()+'"]').prop('disabled',true);
+                });
+              }
+          }
           
           // var distance_new = distance.match(/\d+(\.\d+)?/);
           // var distance_in_mile = (parseFloat(distance_new)/1.609).toFixed(2);
