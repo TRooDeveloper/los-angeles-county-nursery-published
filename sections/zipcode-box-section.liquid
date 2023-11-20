@@ -174,7 +174,7 @@ window.addEventListener('load', function() {
   })
 
   $('.dropdown-content ul li').click(function(){
-      $(this).parents('.swatches__holder').find(".variant_c_select option[value='"+$(this).attr("data-map")+"']").prop('selected',true);
+      $(".variant_c_select option[value='"+$(this).attr("data-map")+"']").prop('selected',true);
     var swatchesElements = document.querySelectorAll('.variant_c_select');
     
     // Trigger the 'change' event for each element
