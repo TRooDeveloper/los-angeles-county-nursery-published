@@ -185,43 +185,7 @@ window.addEventListener('load', function() {
     // Add disabled condition on select box
     
 
-  $('.variant_c_select').each(function(){
-      $(this).find('option:not([disabled])').each(function(){
-           var ul=$(this).parent().parent().find('ul');
-          var listItem = $("<li data-map='"+ $(this).attr("value")+"'>" + $(this).text() +"</li>");
-          ul.append(listItem);
-      })    
-  })
-
-  $('.dropdown-content ul li').click(function(){
-      $(".variant_c_select option[value='"+$(this).attr("data-map")+"']").prop('selected',true);
-    var swatchesElements = document.querySelectorAll('.variant_c_select');
-    
-    // Trigger the 'change' event for each element
-    swatchesElements.forEach(function(element) {
-        var event = new Event("change");
-        element.dispatchEvent(event);
-    });
-  })
-
-
-  $(".custom-dropdown .dropbtn").click(function() {
-      $(".custom-dropdown .dropdown-content").toggle();
-    });
-
-    // Close the dropdown when clicking outside of it
-    $(document).on("click", function(event) {
-      if (!$(event.target).closest(".custom-dropdown").length) {
-        $(".custom-dropdown .dropdown-content").hide();
-      }
-    });
-
-    // Handle option selection
-    $(".custom-dropdown .dropdown-content li").click(function() {
-      var selectedOption = $(this).text();
-      $(".custom-dropdown .dropbtn").text(selectedOption);
-      $(".custom-dropdown .dropdown-content").hide();
-    });
+  
   
 });
   
@@ -343,6 +307,51 @@ window.addEventListener('load', function() {
               }  
             }
           }
+
+
+
+          $('.variant_c_select').each(function(){
+              $(this).find('option:not([disabled])').each(function(){
+                   var ul=$(this).parent().parent().find('ul');
+                  var listItem = $("<li data-map='"+ $(this).attr("value")+"'>" + $(this).text() +"</li>");
+                  ul.append(listItem);
+              })    
+          })
+        
+          $('.dropdown-content ul li').click(function(){
+              $(".variant_c_select option[value='"+$(this).attr("data-map")+"']").prop('selected',true);
+            var swatchesElements = document.querySelectorAll('.variant_c_select');
+            
+            // Trigger the 'change' event for each element
+            swatchesElements.forEach(function(element) {
+                var event = new Event("change");
+                element.dispatchEvent(event);
+            });
+          })
+        
+        
+          $(".custom-dropdown .dropbtn").click(function() {
+              $(".custom-dropdown .dropdown-content").toggle();
+            });
+        
+            // Close the dropdown when clicking outside of it
+            $(document).on("click", function(event) {
+              if (!$(event.target).closest(".custom-dropdown").length) {
+                $(".custom-dropdown .dropdown-content").hide();
+              }
+            });
+        
+            // Handle option selection
+            $(".custom-dropdown .dropdown-content li").click(function() {
+              var selectedOption = $(this).text();
+              $(".custom-dropdown .dropbtn").text(selectedOption);
+              $(".custom-dropdown .dropdown-content").hide();
+            });
+
+
+
+
+          
         } else {
           console.log('Distance not found');
         }
