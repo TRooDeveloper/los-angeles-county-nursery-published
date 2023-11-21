@@ -230,7 +230,7 @@
           "settings": {
             "showInline": false,
             "heading": "Size and Spacing",
-            "content": "custom",
+            "content": "page",
             "metafieldNS": "global",
             "metafieldKey": "",
             "page": "",
