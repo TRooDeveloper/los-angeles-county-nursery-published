@@ -183,6 +183,34 @@ body.active_zip_form:before { content: ''; position: absolute; inset: 0; width: 
   .custom-dropdown{
     display:block; !important;
   }
+.custom-dropdown .dropdown-content {
+    left: 0;
+    width: 100%;
+    border-radius: var(--borderRadiusSmall);
+    overflow: hidden;
+    line-height: 1.15;
+    background: var(--inputFill);
+    color: var(--inputContent);
+    border: 1px solid #0000007a;
+}
+
+.custom-dropdown .dropdown-content li {
+    padding: 5px 10px;
+}
+
+.custom-dropdown {
+    padding-right: 20px;
+}
+.dropdown-content li[data-map="bstrSelectNill"] {
+    display: none !important;
+}
+@media screen and (max-width: 767px){
+    .custom-dropdown {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
 </style>
 
 <script>
