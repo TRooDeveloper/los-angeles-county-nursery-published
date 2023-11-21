@@ -184,13 +184,18 @@ body.active_zip_form:before { content: ''; position: absolute; inset: 0; width: 
 window.addEventListener('load', function() {
     // Add disabled condition on select box
     if($("input.custom_plant_type").val() == "Deciduous"){
-      if($('.variant_dropshipping[value="true"]').length > 0){
-          $('.variant_dropshipping[value="true"]').each(function(){
-            $('.product__swatches select option[value="'+$(this).attr('data-prod-title').trim()+'"]').prop('disabled',true).next().prop('selected',true);
-            // var swatchesde = document.getElementById('variant_c_select');
-            // var event = new Event("change");
-            // swatchesde.dispatchEvent(event);
-        });
+      if($("body").attr("usertype") == "Non-Local"){
+        if($('.variant_dropshipping[value="false"]').length > 0){
+            $('.variant_dropshipping[value="false"]').each(function(){
+              $('.product__swatches select option[value="'+$(this).attr('data-prod-title').trim()+'"]').prop('disabled',true).next().prop('selected',true);
+          });
+        }  
+      }else if($("body").attr("usertype") == "Local"){
+        if($('.variant_dropshipping[value="true"]').length > 0){
+            $('.variant_dropshipping[value="true"]').each(function(){
+              $('.product__swatches select option[value="'+$(this).attr('data-prod-title').trim()+'"]').prop('disabled',true).next().prop('selected',true);
+          });
+        }  
       }
     }
 
