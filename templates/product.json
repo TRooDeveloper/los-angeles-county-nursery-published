@@ -173,19 +173,6 @@
             "textColor": "rgba(0,0,0,0)"
           }
         },
-        "ad4bb46c-b69b-48cb-b0f5-18d6bcfcee31": {
-          "type": "productPageLDelivery",
-          "disabled": true,
-          "settings": {
-            "noMargin": false,
-            "icon": "",
-            "iconColor": "rgba(0,0,0,0)",
-            "text": "<p>Products will be delivered between %start% and %end%.<\/p>",
-            "start": "1",
-            "end": "5",
-            "textColor": "rgba(0,0,0,0)"
-          }
-        },
         "e949c4ff-0a9d-4024-9a19-9e1acb1d1ad7": {
           "type": "productPageInCart",
           "disabled": true,
@@ -196,21 +183,6 @@
             "interval": 8,
             "iconColor": "rgba(0,0,0,0)",
             "textColor": "rgba(0,0,0,0)"
-          }
-        },
-        "97a15426-a236-4f5d-ad11-8f641ace310f": {
-          "type": "productPageDescription",
-          "disabled": true,
-          "settings": {
-            "heading": "Product description",
-            "noMargin": false
-          }
-        },
-        "e1ef4a1e-3206-413c-b8e3-f36d20330875": {
-          "type": "productPageShare",
-          "disabled": true,
-          "settings": {
-            "noMargin": false
           }
         },
         "b1e4fcb8-d3c0-4627-ad91-a80b10e713d6": {
@@ -285,23 +257,6 @@
             "customContent": "<p>Our plants are guaranteed to be true-to-name as labeled and in good condition when received. “Local pickup” means the customer will pick up at our nursery.  “Delivery” does NOT include planting, and customer must arrange to receive items once offloaded from our truck. Our driver may move items as a courtesy, but is not responsible for moving items further onto your property. Returns\/Refunds are subject to a 10% restocking fee.<\/p>"
           }
         },
-        "ec346ebe-0fe7-496b-92c9-82b09a703842": {
-          "type": "productPageTags",
-          "disabled": true,
-          "settings": {
-            "noMargin": false,
-            "style": "swatch",
-            "exclude": ""
-          }
-        },
-        "cfd162ab-e315-458f-849d-75e283a882f1": {
-          "type": "productPageDescription",
-          "disabled": true,
-          "settings": {
-            "heading": "Product description",
-            "noMargin": false
-          }
-        },
         "6754b36c-24e8-40ee-80fc-8adf79cb592d": {
           "type": "productPageTab",
           "settings": {
@@ -328,18 +283,13 @@
         "ppStock",
         "924fff55-3955-4e54-a4ab-81e99347a749",
         "91d4e128-b41d-4cb1-95ea-aae320f64850",
-        "ad4bb46c-b69b-48cb-b0f5-18d6bcfcee31",
         "e949c4ff-0a9d-4024-9a19-9e1acb1d1ad7",
-        "97a15426-a236-4f5d-ad11-8f641ace310f",
-        "e1ef4a1e-3206-413c-b8e3-f36d20330875",
         "b1e4fcb8-d3c0-4627-ad91-a80b10e713d6",
         "e1c9d01f-78f1-4759-aaf2-ed325099a226",
         "05cf9080-7a2a-4b3f-aa4d-80eed2b680a0",
         "20ebc526-75d5-401b-b886-b013a01024fa",
         "0733e003-3c14-4f49-bbf2-ebcc7837ac24",
         "34c82b2d-74a4-4f8b-b63b-25be4314f514",
-        "ec346ebe-0fe7-496b-92c9-82b09a703842",
-        "cfd162ab-e315-458f-849d-75e283a882f1",
         "6754b36c-24e8-40ee-80fc-8adf79cb592d"
       ],
       "settings": {
