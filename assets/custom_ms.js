@@ -69,15 +69,26 @@ function handleClick(event) {
     // hide buttons
     if($("body").hasClass("template--product") && $("body").attr("usertype") ){
             if($("input.custom_plant_type").val() == "Deciduous"){
-              if($('.variant_dropshipping[value="true"]').length > 0){
-                  $('.variant_dropshipping[value="true"]').each(function(){
-                    $('.product__swatches select option[value="'+$(this).attr('data-prod-title').trim()+'"]').prop('disabled',true);
-                    // var swatchesde = document.getElementById('variant_c_select');
-                    // var event = new Event("change");
-                    // swatchesde.dispatchEvent(event);
-                });
+              if($("body").attr("usertype") == "Non-Local"){
+                if($('.variant_dropshipping[value="false"]').length > 0){
+                    $('.variant_dropshipping[value="false"]').each(function(){
+                      $(".product__swatches select option[value='"+$(this).attr("data-prod-title").trim()+"']").prop('disabled',true).next().prop('selected',true);
+                    });
+                    $('.variant_dropshipping[value="true"]').each(function(){
+                        $(".product__swatches select option[value='"+$(this).attr("data-prod-title").trim()+"']").prop('disabled',false).next().prop('selected',true);
+                    });
+                }  
+              }else if($("body").attr("usertype") == "Local"){
+                if($('.variant_dropshipping[value="true"]').length > 0){
+                    $('.variant_dropshipping[value="true"]').each(function(){
+                      $(".product__swatches select option[value='"+$(this).attr("data-prod-title").trim()+"']").prop('disabled',true).next().prop('selected',true);
+                    });
+                    $('.variant_dropshipping[value="false"]').each(function(){
+                        $(".product__swatches select option[value='"+$(this).attr("data-prod-title").trim()+"']").prop('disabled',false).next().prop('selected',true);
+                    });
+                }  
               }
-          }
+            }
 
     function getParameterByName(name, url) {
       if (!url) url = window.location.href;
