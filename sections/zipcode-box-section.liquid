@@ -184,7 +184,37 @@ body.active_zip_form:before { content: ''; position: absolute; inset: 0; width: 
 window.addEventListener('load', function() {
     // Add disabled condition on select box
     
-
+    setTimeout(function(){
+        $('.dropdown-content ul li').click(function(){
+            $(".variant_c_select option[value='"+$(this).attr("data-map")+"']").prop('selected',true);
+          var swatchesElements = document.querySelectorAll('.variant_c_select');
+          
+          // Trigger the 'change' event for each element
+          swatchesElements.forEach(function(element) {
+              var event = new Event("change");
+              element.dispatchEvent(event);
+          });
+        })
+      
+      
+        $(".custom-dropdown .dropbtn").click(function() {
+            $(".custom-dropdown .dropdown-content").toggle();
+          });
+      
+          // Close the dropdown when clicking outside of it
+          $(document).on("click", function(event) {
+            if (!$(event.target).closest(".custom-dropdown").length) {
+              $(".custom-dropdown .dropdown-content").hide();
+            }
+          });
+      
+          // Handle option selection
+          $(".custom-dropdown .dropdown-content li").click(function() {
+            var selectedOption = $(this).text();
+            $(".custom-dropdown .dropbtn").text(selectedOption);
+            $(".custom-dropdown .dropdown-content").hide();
+          });
+    },2000);
   
   
 });
@@ -321,35 +351,7 @@ window.addEventListener('load', function() {
               })    
           })
         
-          $('.dropdown-content ul li').click(function(){
-              $(".variant_c_select option[value='"+$(this).attr("data-map")+"']").prop('selected',true);
-            var swatchesElements = document.querySelectorAll('.variant_c_select');
-            
-            // Trigger the 'change' event for each element
-            swatchesElements.forEach(function(element) {
-                var event = new Event("change");
-                element.dispatchEvent(event);
-            });
-          })
-        
-        
-          $(".custom-dropdown .dropbtn").click(function() {
-              $(".custom-dropdown .dropdown-content").toggle();
-            });
-        
-            // Close the dropdown when clicking outside of it
-            $(document).on("click", function(event) {
-              if (!$(event.target).closest(".custom-dropdown").length) {
-                $(".custom-dropdown .dropdown-content").hide();
-              }
-            });
-        
-            // Handle option selection
-            $(".custom-dropdown .dropdown-content li").click(function() {
-              var selectedOption = $(this).text();
-              $(".custom-dropdown .dropbtn").text(selectedOption);
-              $(".custom-dropdown .dropdown-content").hide();
-            });
+          
 
 
 
