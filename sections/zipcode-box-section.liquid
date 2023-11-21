@@ -185,7 +185,7 @@ window.addEventListener('load', function() {
     // Add disabled condition on select box
     
     setTimeout(function(){
-        $('.dropdown-content ul li').click(function(){
+        $(document).on('click','.custom-dropdown .dropdown-content li',function(){
             $(".variant_c_select option[value='"+$(this).attr("data-map")+"']").prop('selected',true);
           var swatchesElements = document.querySelectorAll('.variant_c_select');
           
