@@ -242,11 +242,11 @@
           "settings": {
             "showInline": false,
             "heading": "Planting",
-            "content": "description",
+            "content": "custom",
             "metafieldNS": "global",
             "metafieldKey": "",
             "page": "",
-            "customContent": "<p>Add custom content here!<\/p>"
+            "customContent": "<p>Step One:Soil and Planting: Plant in soil that drains well. Dig a hole that is as deep as the tree’s roots and at least twice as wide.Step Two:Place the tree in the hole and backfill around the plant’s roots with a mixture of the native soil and high-quality planting mix that has washed sand and organic fertilizer.Step Three:Create a basin around the roots drip zone so that water collects. Water deeply until the roots and nearby soil is saturated and reaches field capacity.<\/p>"
           }
         },
         "20ebc526-75d5-401b-b886-b013a01024fa": {
@@ -357,61 +357,6 @@
         "imageStickyPosition": 100
       }
     },
-    "4bebbf4f-3cab-4b70-9db8-d5a1cd37644a": {
-      "type": "section__video-text",
-      "blocks": {
-        "template--15265775321199__4bebbf4f-3cab-4b70-9db8-d5a1cd37644a-title-1": {
-          "type": "title",
-          "settings": {
-            "fullWidth": true,
-            "content": "Planting Information",
-            "textColor": "rgba(0,0,0,0)",
-            "fontFamily": "title",
-            "fontSize": "medium"
-          }
-        },
-        "template--15265775321199__4bebbf4f-3cab-4b70-9db8-d5a1cd37644a-richText-1": {
-          "type": "richText",
-          "settings": {
-            "fullWidth": true,
-            "maxBWidth": 100,
-            "content": "<p><strong>Step One:<br\/><\/strong>Soil and Planting: Plant in soil that drains well. Dig a hole that is as deep as the tree’s roots and at least twice as wide.<\/p><p><strong>Step Two:<br\/><\/strong>Place the tree in the hole and backfill around the plant’s roots with a mixture of the native soil and high-quality planting mix that has washed sand and organic fertilizer.<\/p><p><strong>Step Three:<br\/><\/strong>Create a basin around the roots drip zone so that water collects. Water deeply until the roots and nearby soil is saturated and reaches field capacity.<\/p>",
-            "detectLists": false,
-            "textColor": "rgba(0,0,0,0)",
-            "fontFamily": "base",
-            "fontSize": "base"
-          }
-        }
-      },
-      "block_order": [
-        "template--15265775321199__4bebbf4f-3cab-4b70-9db8-d5a1cd37644a-title-1",
-        "template--15265775321199__4bebbf4f-3cab-4b70-9db8-d5a1cd37644a-richText-1"
-      ],
-      "settings": {
-        "custom_id": "",
-        "displayFor": "display--both",
-        "layout": "default",
-        "nomargin": false,
-        "scopedCSS": "",
-        "height": 0,
-        "padding": 10,
-        "lineMargin": 12,
-        "backgroundColor": "rgba(0,0,0,0)",
-        "backgroundPosition": "middle",
-        "backgroundFilter": "none",
-        "backdropIntensity": 50,
-        "parallax": false,
-        "backgroundPattern": false,
-        "overlayOpacity": 0,
-        "overlayColor": "#000000",
-        "contentColor": "rgba(0,0,0,0)",
-        "horizontalAlignment": "start",
-        "verticalAlignment": "top",
-        "imagePosition": "left",
-        "imageWidth": "6",
-        "video": "https:\/\/youtu.be\/7cWmg93934Y"
-      }
-    },
     "upsell": {
       "type": "api__upsell--inline",
       "disabled": true,
@@ -437,7 +382,6 @@
     "16647698089f1a4f71",
     "028fd134-8a7d-4c0b-892c-957178f3411a",
     "page",
-    "4bebbf4f-3cab-4b70-9db8-d5a1cd37644a",
     "upsell",
     "recommended"
   ]
