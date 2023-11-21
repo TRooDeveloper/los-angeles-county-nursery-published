@@ -183,21 +183,7 @@ body.active_zip_form:before { content: ''; position: absolute; inset: 0; width: 
   
 window.addEventListener('load', function() {
     // Add disabled condition on select box
-    if($("input.custom_plant_type").val() == "Deciduous"){
-      if($("body").attr("usertype") == "Non-Local"){
-        if($('.variant_dropshipping[value="false"]').length > 0){
-            $('.variant_dropshipping[value="false"]').each(function(){
-              $('.product__swatches select option[value="'+$(this).attr('data-prod-title').trim()+'"]').prop('disabled',true).next().prop('selected',true);
-          });
-        }  
-      }else if($("body").attr("usertype") == "Local"){
-        if($('.variant_dropshipping[value="true"]').length > 0){
-            $('.variant_dropshipping[value="true"]').each(function(){
-              $('.product__swatches select option[value="'+$(this).attr('data-prod-title').trim()+'"]').prop('disabled',true).next().prop('selected',true);
-          });
-        }  
-      }
-    }
+    
 
   $('.variant_c_select').each(function(){
       $(this).find('option:not([disabled])').each(function(){
@@ -336,7 +322,21 @@ window.addEventListener('load', function() {
           }
           // hide buttons end
 
-          
+          if($("input.custom_plant_type").val() == "Deciduous"){
+            if($("body").attr("usertype") == "Non-Local"){
+              if($('.variant_dropshipping[value="false"]').length > 0){
+                  $('.variant_dropshipping[value="false"]').each(function(){
+                    $('.product__swatches select option[value="'+$(this).attr('data-prod-title').trim()+'"]').prop('disabled',true).next().prop('selected',true);
+                });
+              }  
+            }else if($("body").attr("usertype") == "Local"){
+              if($('.variant_dropshipping[value="true"]').length > 0){
+                  $('.variant_dropshipping[value="true"]').each(function(){
+                    $('.product__swatches select option[value="'+$(this).attr('data-prod-title').trim()+'"]').prop('disabled',true).next().prop('selected',true);
+                });
+              }  
+            }
+          }
         } else {
           console.log('Distance not found');
         }
