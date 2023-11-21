@@ -209,11 +209,12 @@ window.addEventListener('load', function() {
           });
       
           // Handle option selection
-          $(".custom-dropdown .dropdown-content li").click(function() {
+          $(document).on('click','.custom-dropdown .dropdown-content li',function(){
             var selectedOption = $(this).text();
             $(".custom-dropdown .dropbtn").text(selectedOption);
             $(".custom-dropdown .dropdown-content").hide();
-          });
+          })
+      
     },2000);
   
   
