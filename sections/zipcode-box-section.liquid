@@ -311,6 +311,9 @@ window.addEventListener('load', function() {
 
 
           $('.variant_c_select').each(function(){
+            if($(this).parent().find('ul').find('li').length > 0){
+              $(this).parent().find('ul').find('li').remove();
+            }
               $(this).find('option:not([disabled])').each(function(){
                    var ul=$(this).parent().parent().find('ul');
                   var listItem = $("<li data-map='"+ $(this).attr("value")+"'>" + $(this).text() +"</li>");
