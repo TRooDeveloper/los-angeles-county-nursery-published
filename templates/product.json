@@ -242,10 +242,10 @@
           "settings": {
             "showInline": false,
             "heading": "Planting",
-            "content": "custom",
+            "content": "page",
             "metafieldNS": "global",
             "metafieldKey": "",
-            "page": "",
+            "page": "planting",
             "customContent": "<p>Step One:Soil and Planting: Plant in soil that drains well. Dig a hole that is as deep as the tree’s roots and at least twice as wide.Step Two:Place the tree in the hole and backfill around the plant’s roots with a mixture of the native soil and high-quality planting mix that has washed sand and organic fertilizer.Step Three:Create a basin around the roots drip zone so that water collects. Water deeply until the roots and nearby soil is saturated and reaches field capacity.<\/p>"
           }
         },
