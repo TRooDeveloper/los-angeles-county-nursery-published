@@ -19,7 +19,7 @@
             <span class="zone">10b</span>
             <a class="zone-info">Zone info {% if section.settings.zone-img-main != blank %}<span class="zone-img-main"><img src="{{ section.settings.zone-img-main | image_url }}" width="100" height="100" /></span>{% endif %}</a>
             {% if section.settings.zone-img-icon != blank %}
-            <span class="zone-img-icon"><img src="{{ section.settings.zone-img-icon | image_url }}" width="100" height="100" /></span>
+            <span class="zone-img-icon"><img src="{{ section.settings.zone-img-icon | image_url: 'master' }}" width="100" height="100" /></span>
             {% endif %}
           </p>
         </div>
