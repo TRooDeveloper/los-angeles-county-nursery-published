@@ -238,6 +238,7 @@
     }
     cartPage.updateQuantity({target: input});
     cartPage.updateCart();
+    document.dispatchEvent(new CustomEvent("zapiet:start"));
   }
 
   cartPage.updateQuantity = async (event)=>{
@@ -252,7 +253,7 @@
 // document.addEventListener('booster:cart:update', (e)=>{
 //     cartPage.updateCart()
 // })
-    document.dispatchEvent(new CustomEvent("zapiet:start"));
+   
   </script>
 
 {% schema %}
