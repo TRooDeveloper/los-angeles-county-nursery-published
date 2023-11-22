@@ -57,7 +57,7 @@
         "heading": "What's your zipcode?",
         "description": "<p>Enter your shipping zip code to find the hardiness zone and plants suited for the area.<\/p>",
         "paragraph": "<p>Changing Shipping Zip Code may result in removal of items already in your cart<\/p>",
-        "zone-img-icon": "shopify:\/\/shop_images\/hardiness-growing-zones-map_1024x1024_e9004391-93df-47ff-9649-ec809bfb4d41_1024x1024_1.png",
+        "zone-img-icon": "shopify:\/\/shop_images\/hardiness-growing-zones-map_1024x1024_e9004391-93df-47ff-9649-ec809bfb4d41_1024x1024_1.svg",
         "zone-img-main": "shopify:\/\/shop_images\/zone-main-image.png"
       }
     },
