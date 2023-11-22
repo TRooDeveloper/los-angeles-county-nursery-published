@@ -213,6 +213,7 @@
     currentCart.innerHTML = p.querySelector('.shopify-section.section--cart-page').innerHTML;
     currentCart.dataset.lastUpdate = time;
     BoosterTheme.events.trigger('booster:content:update', {trigger: 'cart-page'})
+    document.dispatchEvent(new CustomEvent("zapiet:start"));
   }
 
 {% unless settings.ajaxType == "disabled" %}
@@ -238,7 +239,6 @@
     }
     cartPage.updateQuantity({target: input});
     cartPage.updateCart();
-    document.dispatchEvent(new CustomEvent("zapiet:start"));
   }
 
   cartPage.updateQuantity = async (event)=>{
