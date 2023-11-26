@@ -214,16 +214,6 @@
               "heading": "Follow Us"
             }
           },
-          "a84d7fdc-e400-46a6-aa34-68d829fccd84": {
-            "type": "footerText",
-            "settings": {
-              "width": "auto",
-              "horizontalAlignment": "center",
-              "verticalAlignment": "middle",
-              "heading": "",
-              "text": "<p>© 2023 Los Angeles County Nursery<\/p>"
-            }
-          },
           "85595977-364c-45a5-9ace-51092ab8ab1b": {
             "type": "footerPayment",
             "settings": {
@@ -242,7 +232,6 @@
           "b747a565-96e4-4014-bc96-cef92f052ce3",
           "27c980e8-3f46-43eb-887d-581fab03676b",
           "06e04fbf-1646-47c1-849b-5f2b943d143a",
-          "a84d7fdc-e400-46a6-aa34-68d829fccd84",
           "85595977-364c-45a5-9ace-51092ab8ab1b"
         ],
         "settings": {
@@ -262,7 +251,7 @@
               "horizontalAlignment": "center",
               "verticalAlignment": "middle",
               "heading": "",
-              "text": "<p>Designed and developed by <a href=\"https:\/\/boostertheme.com\/\" target=\"_blank\" title=\"Designpax Agency\">Designpax<\/a><\/p>"
+              "text": "<p>© 2023 Los Angeles County Nursery<\/p>"
             }
           }
         },
