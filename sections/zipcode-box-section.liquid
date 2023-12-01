@@ -280,7 +280,7 @@ window.addEventListener('load', function() {
           console.log("var Id -- "+var_id);
     
     var apiKey = 'AIzaSyCuxIHwRURiz6tcxTlJeR5DshsxyRI0Y6U';
-    var url = `https://curl.trooinbounddev.com/los-angeles-county-nursery/index.php?origins=${store_zip}&destinations=${customer_zip}`;
+    var url = `http://24.199.118.97/index.php?origins=${store_zip}&destinations=${customer_zip}`;
 
     fetch(url)
     .then(response => response.json()) // Parse the response as JSON
@@ -568,7 +568,7 @@ document.querySelector('.zipcode-box-form button#zipcode-submit').addEventListen
   // var defaultZip = $("div.zipcode-box-col-inner span.zipcode").text();
   
   
-  fetch("https://curl.trooinbounddev.com/los-angeles-county-nursery/index.php?zip=" + zipcode_val)
+  fetch("http://24.199.118.97/index.php?zip=" + zipcode_val)
     .then(response => response.json()) // Parse the response as JSON
     .then(data => {
       // Update the content of the elements with the response data
