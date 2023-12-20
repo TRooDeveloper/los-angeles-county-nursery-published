@@ -199,6 +199,7 @@
         },
         "e1c9d01f-78f1-4759-aaf2-ed325099a226": {
           "type": "productPageTab",
+          "disabled": true,
           "settings": {
             "showInline": false,
             "heading": "Size and Spacing",
@@ -211,6 +212,7 @@
         },
         "05cf9080-7a2a-4b3f-aa4d-80eed2b680a0": {
           "type": "productPageTab",
+          "disabled": true,
           "settings": {
             "showInline": false,
             "heading": "Planting",
@@ -223,6 +225,7 @@
         },
         "20ebc526-75d5-401b-b886-b013a01024fa": {
           "type": "productPageTab",
+          "disabled": true,
           "settings": {
             "showInline": false,
             "heading": "Watering",
@@ -235,6 +238,7 @@
         },
         "0733e003-3c14-4f49-bbf2-ebcc7837ac24": {
           "type": "productPageTab",
+          "disabled": true,
           "settings": {
             "showInline": false,
             "heading": "Fertilizing",
@@ -247,6 +251,7 @@
         },
         "34c82b2d-74a4-4f8b-b63b-25be4314f514": {
           "type": "productPageTab",
+          "disabled": true,
           "settings": {
             "showInline": false,
             "heading": "Pruning",
@@ -259,6 +264,7 @@
         },
         "6754b36c-24e8-40ee-80fc-8adf79cb592d": {
           "type": "productPageTab",
+          "disabled": true,
           "settings": {
             "showInline": false,
             "heading": "Pest Management",
