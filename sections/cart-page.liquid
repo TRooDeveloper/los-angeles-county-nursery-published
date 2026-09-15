@@ -25,7 +25,7 @@
             <a class="card__img--container minicart__image" href="{{ item.url | within: collections.all }}">
                 <div class="card__img--ratio">
                     <div class="card__img">
-                        {% render 'image', src: item, alt: item.title | escape , size: 'medium' %}
+                        {% render 'image', src: item, alt: item.title, size: 'medium' %}
                     </div>
                 </div>
             </a>
@@ -312,4 +312,13 @@
 }
 ]
 }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'image', src: item, alt: item.title | escape , size: 'medium' %}"
+  to: "{% render 'image', src: item, alt: item.title, size: 'medium' %}"
+  position: 1596..1660
+{%- endcomment -%}
