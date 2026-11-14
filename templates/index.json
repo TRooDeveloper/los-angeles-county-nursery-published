@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "1664492475c4d59cbd": {
@@ -52,7 +61,7 @@
           "settings": {
             "fullWidth": true,
             "maxBWidth": 65,
-            "content": "<p>For over 20 years now, our dedicated family has grown and planted Southern California’s most popular and rare fruit trees, flowering, fragrant, privacy, Persian and Mediterranean  plants.<\/p>",
+            "content": "<p>For over 20 years now, our dedicated family has grown and planted Southern California’s most popular and rare fruit trees, flowering, fragrant, privacy, Persian and Mediterranean  plants.</p>",
             "detectLists": true,
             "textColor": "#ffffff",
             "fontFamily": "base",
@@ -64,7 +73,7 @@
           "settings": {
             "fullWidth": false,
             "text": "Explore Trees",
-            "url": "shopify:\/\/collections",
+            "url": "shopify://collections",
             "icon": "",
             "iconPosition": "icon--left",
             "wideButton": false,
@@ -82,7 +91,7 @@
           "settings": {
             "fullWidth": false,
             "text": "About us",
-            "url": "shopify:\/\/pages\/about-us",
+            "url": "shopify://pages/about-us",
             "icon": "",
             "iconPosition": "icon--left",
             "wideButton": false,
@@ -115,7 +124,7 @@
         "padding": 0,
         "lineMargin": 0,
         "backgroundColor": "rgba(0,0,0,0)",
-        "backgroundImage": "shopify:\/\/shop_images\/Nursery-entrance.webp",
+        "backgroundImage": "shopify://shop_images/Nursery-entrance.webp",
         "backgroundImageUrl": "",
         "backgroundPosition": "middle",
         "backgroundFilter": "none",
@@ -160,7 +169,7 @@
         "cb9fe4f9-0f47-4440-9e0c-9cf885328cca": {
           "type": "collection",
           "settings": {
-            "collection": "avocado-trees-1"
+            "collection": "avocado-trees-for-sale"
           }
         },
         "ec77ed66-eb90-46cc-9f8b-959d89d60a30": {
@@ -370,11 +379,11 @@
             "verticalAlignment": "middle",
             "imagePosition": "left",
             "imageWidth": "6",
-            "image": "shopify:\/\/shop_images\/Garden-Image.jpg",
+            "image": "shopify://shop_images/Garden-Image.jpg",
             "overlayOpacity": 0,
             "overlayColor": "#000000",
             "heading": "About Us",
-            "text": "<p>Founder, Dr. Majid Jahanbin’s fell in love with plants at the age of 7, while visiting his dads farm in Abadan, Iran. He earned his Phd in Plant Science and Agricultural Engineering, from Bologna University in Italy. He now has over 50 years of professional experience, and hosts two popular radio shows, where he provides gardening advice and answers questions on Air in Farsi.<\/p><p>Ashkan Jahanbin is a horticulturalist and landscape consultant, with degrees in Environmental Horticulture and Landscape Architecture from California Polytechnic University in San Luis Obispo, Ca. He grew up around the nursery, learning about plants and their role in our lives. As the former nursery production manager at Cal Poly, he focused on growing organically. He’s now dedicated to Paradise Nursery. Growing plants and developing landscapes that are beautiful, enjoyable, and environmentally sustainable. From our family to yours, Happy Harvests!<\/p>",
+            "text": "<p>Founder, Dr. Majid Jahanbin’s fell in love with plants at the age of 7, while visiting his dads farm in Abadan, Iran. He earned his Phd in Plant Science and Agricultural Engineering, from Bologna University in Italy. He now has over 50 years of professional experience, and hosts two popular radio shows, where he provides gardening advice and answers questions on Air in Farsi.</p><p>Ashkan Jahanbin is a horticulturalist and landscape consultant, with degrees in Environmental Horticulture and Landscape Architecture from California Polytechnic University in San Luis Obispo, Ca. He grew up around the nursery, learning about plants and their role in our lives. As the former nursery production manager at Cal Poly, he focused on growing organically. He’s now dedicated to Paradise Nursery. Growing plants and developing landscapes that are beautiful, enjoyable, and environmentally sustainable. From our family to yours, Happy Harvests!</p>",
             "buttonText": "",
             "url": "",
             "wideButton": false,
@@ -443,7 +452,7 @@
         "overlayOpacity": 0,
         "overlayColor": "#000000",
         "titleHeading": "Hedges and Shrubs",
-        "titleContent": "<p>This is awesome!<\/p>",
+        "titleContent": "<p>This is awesome!</p>",
         "showMore": true,
         "showMoreText": "",
         "showMoreAlignment": "center"
@@ -467,7 +476,7 @@
           "settings": {
             "fullWidth": true,
             "maxBWidth": 100,
-            "content": "<p>We got tips and tricks when putting together your next flower arrangement—<br\/>whether it be for gifting, your home décor, a holiday gathering, or dinner party.<\/p>",
+            "content": "<p>We got tips and tricks when putting together your next flower arrangement—<br/>whether it be for gifting, your home décor, a holiday gathering, or dinner party.</p>",
             "detectLists": true,
             "textColor": "#353535",
             "fontFamily": "base",
